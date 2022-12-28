@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="{{ asset('./css/main.css') }}">
+    <link rel="shortcut icon" href="{{asset('./img/logo.png')}}" type="image/x-icon">
     <title>Sekolah</title>
 </head>
 

@@ -89,7 +89,7 @@
     }
 
     &__features {
-        padding: 0 10rem 10rem 10rem;
+        padding: 10rem;
         display: flex;
         flex-direction: column;
         gap: 5rem;
@@ -191,24 +191,29 @@
     }
 
     &__sambutan {
-        max-width: 144rem;
         width: 100%;
-        padding: 10rem;
+        background: #eff3f3;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
+        &-wrapper {
+            max-width: 144rem;
+            padding: 10rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
 
-        gap: 5rem;
+            @include respond(bp-768) {
+                padding: 5rem;
+            }
+            @include respond(bp-500) {
+                padding: 5rem 2rem;
+            }
 
-        @include respond(bp-768) {
-            padding: 5rem;
-        }
-        @include respond(bp-500) {
-            padding: 5rem 2rem;
-        }
-
-        @include respond(tab-port) {
-            flex-direction: column-reverse;
+            @include respond(tab-port) {
+                flex-direction: column-reverse;
+            }
         }
         &--left {
             width: 50%;
@@ -388,7 +393,7 @@
                 p {
                     font-size: 3.2rem;
                     font-weight: 900;
-                    font-family: "Helvetica", Serif;
+                    font-family: "primary-font", sans-serif;
                     text-transform: uppercase;
                 }
                 &-btn {

@@ -42,26 +42,32 @@
         </div>
 
         <div class="home__sambutan">
-            <div class="home__sambutan--left">
-                <img src="{{ asset('img/kepalasekolah.svg') }}" alt="" />
-            </div>
-            <div class="home__sambutan--right">
-                <div class="card">
-                    <div class="card__title">
-                        Profile SMKN 1 Purwosari
+            <div class="home__sambutan-wrapper">
+
+
+                <div class="home__sambutan--left">
+                    <img src="{{ asset('img/kepalasekolah.svg') }}" alt="" />
+                </div>
+                <div class="home__sambutan--right">
+                    <div class="card">
+                        <div class="card__title">
+                            Profile SMKN 1 Purwosari
+                        </div>
+                        <div class="card__desc">
+                            <p class="card__desc--text">
+                                Selamat datang di website <span> SMKN 1 Purwosari </span>. Yang merupakan lembaga pusat
+                                pendidikan dan juga
+                                sebagai salah satu Pusat Pelatihan dan Pendidikan Keterampilan Terpadu (PPPKT) di Propinsi
+                                Jawa
+                                Timur.  SMKN 1 Purwosari merupakan
+                                Sekolah Adiwiyata yang berada di Purwosari dimana tempatnya yang sangat strategis dan mudah
+                                dijangkau, Mempunyai motto “Kepuasan anda, Prestasi kami” segenap keluarga besar SMKN 1
+                                Purwosari senantiasa akan memberikan layanan
+                                yang prima bagi masyarakat. Selamat bergabung.
+                            </p>
+                        </div>
+                        {{-- <div class="card__btn">Learn More <ion-icon name="chevron-forward-outline"></ion-icon> --}}
                     </div>
-                    <div class="card__desc">
-                        <p class="card__desc--text">
-                            Selamat datang di website SMKN 1 Purwosari. Yang merupakan lembaga pusat pendidikan dan juga
-                            sebagai salah satu Pusat Pelatihan dan Pendidikan Keterampilan Terpadu (PPPKT) di Propinsi Jawa
-                            Timur. SMKN 1 Purwosari merupakan
-                            Sekolah Adiwiyata yang berada di Purwosari dimana tempatnya yang sangat strategis dan mudah
-                            dijangkau, Mempunyai motto “Kepuasan anda, Prestasi kami” segenap keluarga besar SMKN 1
-                            Purwosari senantiasa akan memberikan layanan
-                            yang prima bagi masyarakat. Selamat bergabung.
-                        </p>
-                    </div>
-                    {{-- <div class="card__btn">Learn More <ion-icon name="chevron-forward-outline"></ion-icon> --}}
                 </div>
             </div>
         </div>
@@ -206,7 +212,7 @@
             </div>
             <div class="home__action-item">
                 <div class="home__action-item-title">
-                    <p>Keunggulan</p>
+                    <p>Fasilitas</p>
                     <div class="home__action-item-title-btn">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
@@ -215,7 +221,7 @@
             </div>
             <div class="home__action-item">
                 <div class="home__action-item-title">
-                    <p>Keunggulan</p>
+                    <p>Prestasi</p>
                     <div class="home__action-item-title-btn">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
@@ -308,7 +314,7 @@
 @section('js')
     <script>
         $(window).scroll(function() {
-            navScroll(897);
+            navScroll(150);
         })
         for (let i = 0; i < 7; i++) {
             $('.home__berita--wrapper__left--scroll').append(`<div class="berita-box">
