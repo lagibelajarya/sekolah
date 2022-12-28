@@ -482,7 +482,7 @@ body {
           color: #fff;
           font-size: 5.8rem;
           font-weight: bold;
-          font-family: "Montserrat", sans-serif; }
+          font-family: "primary-font", sans-serif; }
           @media only screen and (max-width: 48em) {
             .home .hero__top--title__1 {
               font-size: 4.6rem; } }
@@ -492,7 +492,7 @@ body {
               font-weight: 500; } }
         .home .hero__top--title__2 {
           font-weight: 400;
-          font-family: "Montserrat", sans-serif;
+          font-family: "primary-font", sans-serif;
           text-align: center;
           font-size: 1.6rem;
           color: #fff; }
@@ -1341,3 +1341,35 @@ body {
         background-position: center !important;
         background-size: cover !important;
         background-repeat: no-repeat !important; }
+  .about__info {
+    width: 100%; }
+    .about__info-container {
+      width: 100%;
+      max-width: 1440rem;
+      padding: 10rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 10rem; }
+      .about__info-container-right {
+        width: -webkit-fill-available; }
+        .about__info-container-right-title {
+          margin-bottom: 5rem;
+          color: #132133;
+          font-size: 2.6rem;
+          font-weight: 500; }
+        .about__info-container-right-txt {
+          margin-bottom: 8rem;
+          color: #132133;
+          font-size: 2.4rem; }
+        .about__info-container-right-btn {
+          background-color: #132133;
+          color: white;
+          font-size: 2rem;
+          font-weight: 400;
+          width: fit-content; }
+      .about__info-container-left {
+        width: -webkit-fill-available; }
+        .about__info-container-left-txt {
+          margin-bottom: 8rem;
+          color: #132133;
+          font-size: 2.4rem; }
