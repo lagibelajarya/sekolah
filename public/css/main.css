@@ -107,21 +107,27 @@ body {
     position: fixed;
     top: 8.2rem;
     z-index: 100;
-    width: -webkit-fill-available; }
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    opacity: 0;
+    visibility: hidden; }
     .header-popup-container {
-      padding: 5rem;
+      transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
       width: -webkit-fill-available;
       background-color: white;
-      border-radius: 0 0 3rem 3rem;
       display: flex;
       flex-wrap: wrap;
-      box-shadow: 4px 4px 2rem rgba(128, 128, 128, 0.3); }
-      @media (max-height: 630px) {
-        .header-popup-container {
-          height: 100%;
-          overflow: auto; } }
+      height: -webkit-fill-available;
+      overflow: auto; }
+      .header-popup-container-wrapper {
+        border-radius: 0 0 3rem 3rem;
+        box-shadow: 4px 4px 2rem rgba(128, 128, 128, 0.3);
+        background-color: white;
+        padding: 5rem;
+        overflow: hidden; }
       .header-popup-container-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: 400;
         color: #132133;
         flex-grow: 2;
@@ -136,10 +142,10 @@ body {
         .header-popup-container-box-title {
           font-weight: 800;
           color: #132133;
-          font-size: 2.4rem;
+          font-size: 1.6rem;
           text-transform: uppercase; }
         .header-popup-container-box-link {
-          font-size: 2.2rem;
+          font-size: 1.4rem;
           font-weight: 400;
           color: #132133; }
       .header-popup-container-action {
@@ -153,20 +159,20 @@ body {
             margin-top: 3rem;
             flex-direction: row; } }
         .header-popup-container-action-box {
-          padding: 7rem 2rem 2rem 2rem;
+          padding: 5rem 2rem 2rem 2rem;
           border-radius: 2rem;
           display: flex;
           height: fit-content;
           gap: 2rem;
           align-items: center; }
           .header-popup-container-action-box-title {
-            font-size: 2.4rem;
+            font-size: 1.6rem;
             color-scheme: #132133;
             font-weight: 500; }
           .header-popup-container-action-box-btn {
             cursor: pointer;
-            height: 4rem;
-            width: 4rem;
+            height: 3.2rem;
+            width: 3.2rem;
             border-radius: 100%;
             box-shadow: 4px 4px 2rem rgba(128, 128, 128, 0.3);
             display: flex;
@@ -177,7 +183,7 @@ body {
             .header-popup-container-action-box-btn:hover {
               transform: scale(1.1); }
             .header-popup-container-action-box-btn ion-icon {
-              font-size: 2.4rem;
+              font-size: 2rem;
               font-weight: 400; }
   .header-container {
     max-width: 144rem;

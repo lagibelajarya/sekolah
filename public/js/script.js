@@ -25,6 +25,12 @@ function activeLink(name) {
 //     }
 // });
 
+$(".btn-toggle-header-popup").on("click", function () {
+    $(".header-popup").toggleClass("show");
+});
+if ($(".header-popup").hasClass("show")) {
+    $(".header").addClass("header-dark");
+}
 function navScroll(num) {
     if ($(window).scrollTop() >= num) {
         $(".header").addClass("header-dark");
