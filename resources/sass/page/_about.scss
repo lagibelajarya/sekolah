@@ -2,9 +2,8 @@
     width: 100%;
     &__hero {
         position: relative;
-        padding: 10rem 10rem;
+        padding: 10rem;
         align-self: stretch;
-        // height: 52.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -71,10 +70,10 @@
         width: 100%;
         &-container {
             width: 100%;
-            max-width: 1440rem;
+            max-width: 144rem;
             padding: 10rem;
             display: flex;
-            
+
             justify-content: space-between;
             gap: 10rem;
             &-right {

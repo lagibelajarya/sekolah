@@ -1,5 +1,5 @@
 .header {
-    padding: 1.6rem 10rem;
+    padding: 1.6rem 5rem;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -17,83 +17,174 @@
     }
     //navbar phone
 
-    &-phone {
-        transform: translateY(-100%);
-        padding: 1.6rem 10rem;
+    &-popup {
         position: fixed;
-        top: 0;
-        z-index: 11;
-        width: 100%;
-        height: fit-content;
-        background-color: $color-secondary;
-        transition: all 0.2s linear;
-        opacity: 0;
-        visibility: hidden;
-
-        @include respond(bp-768) {
-            padding: 1.6rem 5rem;
-        }
-        @include respond(bp-500) {
-            padding: 1.6rem 2rem;
-        }
+        top: 8.2rem;
+        z-index: 100;
+        width: -webkit-fill-available;
         &-container {
-            max-width: 144rem;
-            width: 100%;
+            padding: 5rem;
+            width: -webkit-fill-available;
+            background-color: white;
+            border-radius: 0 0 3rem 3rem;
             display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 3.2rem;
+            flex-wrap: wrap;
+            box-shadow: 4px 4px 2rem rgba(grey, 0.3);
+            @media (max-height: 630px) {
+                height: 100%;
+                overflow: auto;
+            }
+            &-title {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: $color-secondary;
+                flex-grow: 2;
+                width: 100%;
+                margin-bottom: 3rem;
+            }
 
-            .header-phone-top {
-                align-self: stretch;
+            &-box {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                &__logo {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    img {
-                        height: 5rem;
-                    }
-                    p {
-                        color: #fff;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                    }
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+                margin-right: 10rem;
+                &-title {
+                    font-weight: 800;
+                    color: $color-secondary;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
                 }
-                &__btn {
-                    ion-icon {
-                        font-size: 4rem;
-                        color: #fff;
-                    }
+                &-link {
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    color: $color-secondary;
                 }
             }
-            .header-phone-list {
+            &-action {
                 display: flex;
                 align-items: center;
-                flex-wrap: wrap;
-                gap: 3.2rem;
-                &-item {
-                    color: $color-grey;
-                    font-size: 1.4rem;
-                    font-weight: 400;
-                    &.btn-join {
-                        padding: 1rem 2rem;
-                        border-radius: 0.5rem;
-                        color: $color-primary;
-                        border: solid 1px $color-primary;
-                        transition: all 0.3s;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3rem;
+                @media screen and (max-width: 1160px) {
+                    margin-top: 3rem;
+                    flex-direction: row;
+                }
+
+                &-box {
+                    padding: 7rem 2rem 2rem 2rem;
+                    border-radius: 2rem;
+                    display: flex;
+                    height: fit-content;
+                    gap: 2rem;
+                    align-items: center;
+                    &-title {
+                        font-size: 2.4rem;
+                        color-scheme: $color-secondary;
+                        font-weight: 500;
+                    }
+                    &-btn {
+                        cursor: pointer;
+                        height: 4rem;
+                        width: 4rem;
+                        border-radius: 100%;
+                        box-shadow: 4px 4px 2rem rgba(grey, 0.3);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        transition: all 0.2s;
                         &:hover {
-                            background: $color-primary;
-                            color: #fff;
+                            transform: scale(1.1);
+                        }
+                        & ion-icon {
+                            font-size: 2.4rem;
+                            font-weight: 400;
                         }
                     }
                 }
             }
         }
     }
+
+    // &-phone {
+    //     transform: translateY(-100%);
+    //     padding: 1.6rem 5rem;
+    //     position: fixed;
+    //     top: 0;
+    //     z-index: 11;
+    //     width: 100%;
+    //     height: fit-content;
+    //     background-color: $color-secondary;
+    //     transition: all 0.2s linear;
+    //     opacity: 0;
+    //     visibility: hidden;
+
+    //     @include respond(bp-768) {
+    //         padding: 1.6rem 5rem;
+    //     }
+    //     @include respond(bp-500) {
+    //         padding: 1.6rem 2rem;
+    //     }
+    //     &-container {
+    //         max-width: 144rem;
+    //         width: 100%;
+    //         display: flex;
+    //         align-items: flex-start;
+    //         flex-direction: column;
+    //         gap: 3.2rem;
+
+    //         .header-phone-top {
+    //             align-self: stretch;
+    //             display: flex;
+    //             justify-content: space-between;
+    //             align-items: center;
+    //             &__logo {
+    //                 display: flex;
+    //                 align-items: center;
+    //                 gap: 5px;
+    //                 img {
+    //                     height: 5rem;
+    //                 }
+    //                 p {
+    //                     color: #fff;
+    //                     font-size: 1.6rem;
+    //                     font-weight: 700;
+    //                     text-transform: uppercase;
+    //                 }
+    //             }
+    //             &__btn {
+    //                 ion-icon {
+    //                     font-size: 4rem;
+    //                     color: #fff;
+    //                 }
+    //             }
+    //         }
+    //         .header-phone-list {
+    //             display: flex;
+    //             align-items: center;
+    //             flex-wrap: wrap;
+    //             gap: 3.2rem;
+    //             &-item {
+    //                 color: $color-grey;
+    //                 font-size: 1.4rem;
+    //                 font-weight: 400;
+    //                 &.btn-join {
+    //                     padding: 1rem 2rem;
+    //                     border-radius: 0.5rem;
+    //                     color: $color-primary;
+    //                     border: solid 1px $color-primary;
+    //                     transition: all 0.3s;
+    //                     &:hover {
+    //                         background: $color-primary;
+    //                         color: #fff;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     // navbar desktop
 
@@ -128,7 +219,7 @@
     &__logo {
         height: 5rem;
     }
-  
+
     &__list {
         display: flex;
         align-items: center;
