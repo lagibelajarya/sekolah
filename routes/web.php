@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [frontEndPageController::class, 'home']);
 Route::get('/about', [frontEndPageController::class, 'about']);
+Route::get('/alumni', [frontEndPageController::class, 'alumni']);

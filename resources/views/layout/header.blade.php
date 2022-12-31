@@ -1,59 +1,68 @@
 <header class="header">
     <div class="header-container">
-        <div class="header__name">
-            <ion-icon class="header__name-btn btn-toggle-header-popup" name="menu-outline"></ion-icon>
+        <div class="header__name btn-show-header-popup">
+            <ion-icon class="header__name-btn " name="menu-outline"></ion-icon>
             <p class="header__name-title">
                 smk negeri 1
                 purwosari
             </p>
         </div>
-        <img class="header__logo" src={{ asset('./img/logo.png') }} alt="Logo" />
+        <img class="header__logo" onclick="window.location.href = '/'" src={{ asset('./img/logo.png') }} alt="Logo" />
         <div class="header__list">
-            <a href="/" class="header__list--item home-link">Beranda</a>
-            <a href="/about" class="header__list--item about-link">Tentang</a>
-            <a href="#" class="header__list--item btn-join ">Join Us &rarr;</a>
+            <a href="/ppdb" class="header__list--item ppdb-link">PPDB</a>
+            <a href="/alumni" class="header__list--item alumni-link">ALUMNI</a>
+            <a href="/join" class="header__list--item btn-join">Join Us &rarr;</a>
         </div>
-
 
     </div>
 </header>
 
 <header class="header-popup">
     <div class="header-popup-container-wrapper">
+        <div class="header-popup-head">
+            <div class="header-popup-head-btn btn-close-header-popup">
+                <ion-icon name="close-outline"></ion-icon> Close
+            </div>
+            <div class="header-popup-head-link">
+                <a href="/ppdb">ppdb</a>
+                <a href="/alumni">alumni</a>
+                <a href="/alumni">join us &rarr;</a>
+            </div>
+        </div>
         <div class="header-popup-container">
             <div class="header-popup-container-title">Browse Our Content</div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="" class="header-popup-container-box-link">Home</a>
-                <a href="" class="header-popup-container-box-link">About</a>
+                <a href="/" class="header-popup-container-box-link">Home</a>
+                <a href="/about" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="" class="header-popup-container-box-link">Home</a>
-                <a href="" class="header-popup-container-box-link">About</a>
+                <a href="/" class="header-popup-container-box-link">Home</a>
+                <a href="/about" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="" class="header-popup-container-box-link">Home</a>
-                <a href="" class="header-popup-container-box-link">About</a>
+                <a href="/" class="header-popup-container-box-link">Home</a>
+                <a href="/about" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
             <div class="header-popup-container-action">
                 <div class="header-popup-container-action-box"
                     style="background: radial-gradient(74.87% 160.81% at 29.43% 109.75%,#fcacf1 0,#fcacf1 45.38%,#fe9887 74.11%,#ef4225 100%);">
-                    <div class="header-popup-container-action-box-title">explore our resources</div>
+                    <div class="header-popup-container-action-box-title">PPDB SMKN 1 Purwosari</div>
                     <div class="header-popup-container-action-box-btn">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
                 </div>
                 <div class="header-popup-container-action-box"
                     style="background: radial-gradient(74.87% 160.81% at 29.43% 109.75%,#7fdddd 0,#7fdddd 45.38%,#33d2c9 74.11%,#1aa9e8 100%);">
-                    <div class="header-popup-container-action-box-title">explore our resources</div>
+                    <div class="header-popup-container-action-box-title">ALUMNI SMKN 1 Purwosari</div>
                     <div class="header-popup-container-action-box-btn">
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>

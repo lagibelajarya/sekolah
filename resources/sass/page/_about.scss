@@ -12,6 +12,9 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: 150%;
+        margin: 2rem 2rem 0 2rem;
+        border-radius: 3rem;
+        overflow: hidden;
         @include respond(1000) {
             display: none;
         }
@@ -73,7 +76,6 @@
             max-width: 144rem;
             padding: 10rem;
             display: flex;
-
             justify-content: space-between;
             gap: 10rem;
             &-right {

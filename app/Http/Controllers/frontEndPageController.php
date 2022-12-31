@@ -14,4 +14,12 @@ class frontEndPageController extends Controller
     {
         return view('page.about');
     }
+    public function alumni()
+    {
+        return view('.page.alumni');
+    }
+    public function ppdb()
+    {
+        return view('page.ppdb');
+    }
 }
