@@ -1400,7 +1400,7 @@ body {
         font-size: 1.6rem;
         font-weight: 500; }
     .alumni-hero-title {
-      font-size: 15rem;
+      font-size: 10vw;
       line-height: 0.9;
       font-weight: 900;
       font-family: "primary-font", sans-serif;
@@ -1420,11 +1420,14 @@ body {
       justify-content: flex-start;
       gap: 10rem;
       height: 100%; }
+      @media only screen and (max-width: 75em) {
+        .alumni-info-container {
+          flex-direction: column; } }
       .alumni-info-container-left {
-        width: 50%; }
+        width: 100%; }
         .alumni-info-container-left-img {
           height: 40vw;
-          width: 40vw;
+          width: 100%;
           background-repeat: no-repeat !important;
           background-position: center !important;
           background-size: cover !important;
@@ -1433,14 +1436,20 @@ body {
             .alumni-info-container-left-img {
               height: 57.6rem;
               width: 57.6rem; } }
+          @media only screen and (max-width: 75em) {
+            .alumni-info-container-left-img {
+              height: 50vw; } }
       .alumni-info-container-right {
         height: 100%;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
         .alumni-info-container-right-txt1 {
           margin-bottom: 10rem; }
+          @media only screen and (max-width: 75em) {
+            .alumni-info-container-right-txt1 {
+              margin-bottom: 5rem; } }
           .alumni-info-container-right-txt1 p:nth-child(1) {
             font-size: 3.2rem;
             font-weight: 600;
