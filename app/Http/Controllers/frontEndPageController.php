@@ -22,4 +22,8 @@ class frontEndPageController extends Controller
     {
         return view('page.ppdb');
     }
+    public function news()
+    {
+        return view('page.news');
+    }
 }

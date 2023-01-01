@@ -9,6 +9,7 @@
         </div>
         <img class="header__logo" onclick="window.location.href = '/'" src={{ asset('./img/logo.png') }} alt="Logo" />
         <div class="header__list">
+            <a href="/news" class="header__list--item news-link">NEWS</a>
             <a href="/ppdb" class="header__list--item ppdb-link">PPDB</a>
             <a href="/alumni" class="header__list--item alumni-link">ALUMNI</a>
             <a href="/join" class="header__list--item btn-join">Join Us &rarr;</a>

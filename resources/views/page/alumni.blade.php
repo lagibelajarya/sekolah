@@ -43,12 +43,16 @@
         </div>
 
         <div class="alumni-info">
+            {{-- <div class="section-title-git">
+                <span></span>
+                <ion-icon name="code"></ion-icon>
+            </div> --}}
             <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
                     <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#fff"></path>
                 </svg>
                 <p>alumni 2019</p>
             </div>
-         
+
             <div class="alumni-info-container">
                 <div class="alumni-info-container-left">
                     <div class="alumni-info-container-left-img" style="background: url({{ asset('./img/alumni.png') }})">

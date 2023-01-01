@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="home">
-        <div class="home__hero bg-asset" style="background: url({{ asset('./img/home-bg.jpg') }})">
+        <div class="home__hero bg-asset" style="background: url({{ asset('./img/bgSchool.jpg') }})">
             <div class="blur"></div>
             <div class="home__hero-info">
                 <div class="home__hero-info-title">
