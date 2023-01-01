@@ -166,7 +166,7 @@
 
         <div class="video-player">
             <div class="video-player-wrapper">
-                <video autoplay src="{{ asset('./video/Inggris.mp4') }}"></video>
+                <video autoplay loop muted src="{{ asset('./video/Inggris.mp4') }}"></video>
             </div>
             <div class="video-player-close btn-circle btn-hide-video-player">
                 &#10005;
