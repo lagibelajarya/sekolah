@@ -20,7 +20,7 @@
             color: $color-secondary;
             font-size: 2rem;
             font-weight: 400;
-            span{
+            span {
                 font-weight: 600;
             }
             // @supports (-webkit-line-clamp: 2) {
@@ -119,12 +119,47 @@
     display: flex;
     height: fit-content;
     padding: 1rem 3.5rem;
-    border-radius: 3rem;
+    border-radius: 10rem;
     font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
+    width: fit-content;
 }
 .bg-second {
     background: $color-secondary;
     color: white;
+}
+.blur {
+    backdrop-filter: blur(50px);
+    background-color: rgba(#000000, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.bg-asset {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 1.8rem;
+    z-index: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    svg {
+        height: 5rem;
+    }
 }

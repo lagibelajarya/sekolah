@@ -13,6 +13,11 @@
             </div>
         </div>
         <div class="about__info">
+            <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
+                    <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#fff"></path>
+                </svg>
+                <p>tentang kita</p>
+            </div>
             <div class="about__info-container">
                 <div class="about__info-container-right">
                     <div class="about__info-container-right-title">What is SMKN 1 Purwosari ?</div>
@@ -35,9 +40,7 @@
             </div>
         </div>
         <div class="home__action">
-            <p class="home__action-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, neque?
-            </p>
+ 
             <div class="home__action-wrapper">
                 <div class="home__action-item">
                     <div class="home__action-item-title">

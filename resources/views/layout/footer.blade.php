@@ -1,3 +1,19 @@
+<footer class="prefooter bg-asset" style="background: url(https://oceanschool.nfb.ca/_nuxt/img/bgFooter.a28e693.webp)">
+    <div class="prefooter-info ">
+        <div class="prefooter-info-title">Take the <br> plunge!</div>
+        <div class="prefooter-info-desc">Let the ocean be your classroom</div>
+        <div class="prefooter-info-btn btn">
+            <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16" role="img">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.89 10.014c0 .276.224.486.5.469a.539.539 0 0 0 .5-.53V4.689H5.691a.539.539 0 0 0-.53.5c-.017.277.193.5.468.5h3.592L.584 14.292a.497.497 0 0 0 0 .705.502.502 0 0 0 .709 0L9.89 6.434v3.58Z">
+                    </path>
+                </svg></p>
+            <p>
+                explose our content
+            </p>
+        </div>
+    </div>
+</footer>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer__wrapper">
@@ -10,11 +26,7 @@
                             purwosari
                         </p>
                     </div>
-                    <div class="footer__wrapper--left__desc">
-                        Transform the way companies manage <br />
-                        payments electronically without the high <br />
-                        payment fees.
-                    </div>
+
                 </div>
 
                 <div class="footer__wrapper--left__box">
@@ -24,15 +36,20 @@
                     <div class="footer__wrapper--left__box--item">Contact</div>
                     <div class="footer__wrapper--left__box--item">Siswa</div>
                     <div class="footer__wrapper--left__box--item">Guru</div>
-                    <div class="footer__wrapper--left__box--item">Profile</div>
-                    <div class="footer__wrapper--left__box--item">Prestasi</div>
-                    <div class="footer__wrapper--left__box--item">Privacy Police</div>
-                    <div class="footer__wrapper--left__box--item">Terms Of Service</div>
-                    <div class="footer__wrapper--left__box--item">Company</div>
+                
                 </div>
 
             </div>
             <div class="footer__wrapper--right">
+
+                <div class="footer__wrapper--right__btn">
+                    <div class="footer__wrapper--right__btn-wrapper">
+                        <p>Our Newsletter</p>
+                        <p>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </p>
+                    </div>
+                </div>
                 <div class="footer__wrapper--right__medsos">
                     <div class="footer__wrapper--right__medsos--box">
                         <ion-icon name="logo-instagram"></ion-icon>

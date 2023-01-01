@@ -61,25 +61,7 @@
         margin-bottom: 10rem;
         &:nth-child(3) {
         }
-        &-title {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -90%);
-            font-size: 2rem;
-            z-index: 0;
-            font-weight: 600;
-            text-transform: uppercase;
-            p {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            svg {
-                height: 5rem;
-            }
-        }
+     
         &-container {
             display: flex;
             align-items: center;
