@@ -47,7 +47,7 @@
                         style="background: url({{ asset('./img/bgSchool.jpg') }})">
                     </div>
                     <div class="home__video-wrapper-info-title">watch trailer</div>
-                    <div class="home__video-wrapper-info-btn">
+                    <div class="home__video-wrapper-info-btn btn-show-video-player">
                         <ion-icon name="play-outline"></ion-icon>
                         <p class="home__video-wrapper-info-btn-txt">play video</p>
                     </div>
@@ -163,12 +163,28 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="video-player">
+            <div class="video-player-wrapper">
+                <video autoplay src="{{ asset('./video/Inggris.mp4') }}"></video>
+            </div>
+            <div class="video-player-close btn-circle btn-hide-video-player">
+                &#10005;
+            </div>
+        </div>
     </div>
 @endsection
 
 @section('js')
-    <script>
+    <script type="text/javascript">
+        $('.btn-show-video-player').on("click", function() {
+            $('.video-player').addClass('show')
+
+        })
+
+        $('.btn-hide-video-player').on("click", function() {
+            $('.video-player').removeClass('show')
+        })
         for (let i = 0; i < 7; i++) {
             $('.home__berita--wrapper__left--scroll').append(`<div class="berita-box">
                         <div class="berita-box__left" style="background: url({{ asset('./img/juara.jpg') }})"></div>

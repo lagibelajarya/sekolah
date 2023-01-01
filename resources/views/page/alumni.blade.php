@@ -1,7 +1,7 @@
 @extends('layout.index')
 @section('content')
     <div class="alumni">
-        <div class="alumni-hero">
+        <div class="alumni-hero bg-asset" style="background: url({{ asset('./img/heroAlumni.jpg') }})">
             <div class="alumni-hero-bc">
                 <a href="">
                     <ion-icon name="home"></ion-icon> Home

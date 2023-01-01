@@ -1,6 +1,6 @@
 .news {
     width: -webkit-fill-available;
-    background: $color-section;
+
     &-hero {
         width: -webkit-fill-available;
         padding: 10rem;
@@ -26,10 +26,12 @@
                 font-weight: 500;
 
                 & ion-icon {
+                    color: white;
                     font-size: 2rem;
                 }
             }
             a:nth-child(2) {
+                color: white;
                 display: flex;
                 font-size: 1.6rem;
             }
@@ -44,6 +46,157 @@
             font-weight: 900;
             font-family: "primary-font", sans-serif;
             text-transform: uppercase;
+        }
+    }
+    &-box {
+        padding: 5rem;
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        justify-content: center;
+        position: relative;
+        &-wrapper {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-head {
+            align-self: flex-start;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3.2rem;
+            &-link {
+                background-color: $color-section;
+                color: $color-secondary;
+                font-weight: 500;
+                &.active {
+                    background-color: $color-secondary;
+                    color: $color-section;
+                }
+            }
+        }
+        &-container {
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            @include respond(bp-1000) {
+                grid-template-columns: 1fr;
+            }
+            @media (max-width: 701px) {
+                width: 100%;
+            }
+            & .berita-box {
+                width: 54.3rem;
+                height: 52.4rem;
+                position: relative;
+                border: 1px solid #e7ebeb;
+                box-shadow: 0 60px 44px -49px rgba(grey, 0.2);
+                border-radius: 3rem;
+                overflow: hidden;
+
+                @include respond(tab-land) {
+                    width: calc(54.3rem / 1.2);
+                    height: calc(52.4rem / 1.2);
+                }
+                @include respond(bp-1000) {
+                    width: 54.3rem;
+                    height: 52.4rem;
+                }
+                @media (max-width: 701px) {
+                    width: 100%;
+                }
+                &-img {
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
+                    background-position: center !important;
+                    width: 100%;
+                    height: 60%;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                &-info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 50%;
+                    border-radius: 3rem 3rem 0 0;
+                    padding: 3rem;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    background-color: white;
+                    width: -webkit-fill-available;
+
+                    &-title {
+                        &-cat {
+                            margin-bottom: 2rem;
+                            font-size: 2rem;
+                            color: rgba($color-secondary, 0.7);
+                            text-transform: capitalize;
+
+                            @include respond(tab-land) {
+                                font-size: calc(2rem / 1.2);
+                            }
+                            @include respond(bp-1000) {
+                                font-size: 2rem;
+                            }
+                        }
+                        &-txt {
+                            text-transform: capitalize;
+                            font-size: 3.2rem;
+                            font-weight: 500;
+                            color: $color-secondary;
+                            @include respond(tab-land) {
+                                font-size: calc(3.2rem / 1.2);
+                            }
+                            @include respond(bp-1000) {
+                                font-size: 3.2rem;
+                            }
+                        }
+                    }
+                    &-date {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-1 {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            & ion-icon {
+                                font-size: 2rem;
+                            }
+                            & p {
+                                font-size: 1.6rem;
+                                @include respond(tab-land) {
+                                    font-size: calc(1.6rem / 1.2);
+                                }
+                                @include respond(bp-1000) {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                        &-2 {
+                            font-size: 1.4rem;
+                            @include respond(tab-land) {
+                                font-size: calc(1.4rem / 1.2);
+                            }
+                            @include respond(bp-1000) {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
