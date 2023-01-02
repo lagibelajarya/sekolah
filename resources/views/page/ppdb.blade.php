@@ -12,6 +12,11 @@
             <div class="ppdb-hero-title">ppdb blog</div>
         </div>
         <div class="ppdb-title">
+            <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
+                    <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#eff3f3"></path>
+                </svg>
+                <p>step ppdb</p>
+            </div>
             <div class="ppdb-title-text">
                 <p>
                     How can you use Ocean School in your classroom? Free, engaging, informative
@@ -44,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ilus-box" >
+                <div class="ilus-box">
                     <div class="ilus-box-img" style="">
                         <img src="{{ asset('public/img/ilustration/ilus6.svg') }}" alt="">
                     </div>

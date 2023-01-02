@@ -49,14 +49,15 @@
         }
     }
     &-title {
-        margin: 10rem;
+        padding: 10rem;
         display: flex;
+        position: relative;
         @media (max-width: 1301px) {
             flex-direction: column;
             gap: 15rem;
         }
         @media (max-width: 768px) {
-            margin: 10rem 5rem;
+            padding: 10rem 5rem;
             gap: 10rem;
         }
         &-text {

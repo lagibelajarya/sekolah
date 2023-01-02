@@ -1594,15 +1594,16 @@ body {
       font-family: "primary-font", sans-serif;
       text-transform: uppercase; }
   .ppdb-title {
-    margin: 10rem;
-    display: flex; }
+    padding: 10rem;
+    display: flex;
+    position: relative; }
     @media (max-width: 1301px) {
       .ppdb-title {
         flex-direction: column;
         gap: 15rem; } }
     @media (max-width: 768px) {
       .ppdb-title {
-        margin: 10rem 5rem;
+        padding: 10rem 5rem;
         gap: 10rem; } }
     .ppdb-title-text {
       width: 50%; }
