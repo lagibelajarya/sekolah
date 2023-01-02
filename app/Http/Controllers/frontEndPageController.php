@@ -26,4 +26,8 @@ class frontEndPageController extends Controller
     {
         return view('page.news');
     }
+    public function detailNews()
+    {
+        return view('page.detailNews');
+    }
 }

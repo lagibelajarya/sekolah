@@ -200,3 +200,100 @@
         }
     }
 }
+
+.detail-news {
+    background-color: $color-section;
+    width: -webkit-fill-available;
+    &-hero {
+        padding: 5rem;
+        padding-top: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-bc {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 5rem;
+            a {
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: $color-secondary;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            p {
+                color: $color-secondary;
+                font-size: 2rem;
+            }
+        }
+        &-info {
+            &-cat {
+                color: $color-secondary;
+                text-transform: capitalize;
+                font-size: 1.8rem;
+                background-color: $color-secondary;
+                color: white;
+                width: fit-content;
+                padding: 1rem 3rem;
+                border-radius: 3rem;
+            }
+            &-title {
+                color: $color-secondary;
+                font-family: "primary-font", sans-serif;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 6.7rem;
+                line-height: 0.9;
+                margin: 2rem 0;
+            }
+            &-desc {
+                color: $color-secondary;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 2.4rem;
+                margin-bottom: 5rem;
+            }
+            &-date {
+                display: flex;
+                gap: 3rem;
+                p {
+                    font-size: 1.4rem;
+                    &:nth-child(1) {
+                        color: $color-secondary;
+                        font-family: "primary-font", sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+                    &:nth-child(2) {
+                        text-transform: capitalize;
+                        color: rgba($color-secondary, 0.8);
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        &-img {
+            margin: 0 3rem 3rem 3rem;
+            border-radius: 3rem;
+            width: -webkit-fill-available;
+            height: 50vw;
+            &-src {
+            }
+        }
+        &-text {
+            p {
+                font-size: 2.4rem;
+                color: rgba($color-secondary, 0.8);
+                margin: 5rem 10rem;
+                @media (max-width: 768px) {
+                    margin: 5rem;
+                }
+            }
+        }
+    }
+}

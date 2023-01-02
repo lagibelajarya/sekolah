@@ -1,7 +1,7 @@
 @extends('layout.index')
 @section('content')
     <div class="alumni">
-        <div class="alumni-hero bg-asset" style="background: url({{ asset('./img/heroAlumni.jpg') }})">
+        <div class="alumni-hero bg-asset" style="background: url({{ asset('public/img/heroAlumni.jpg') }})">
             <div class="alumni-hero-bc">
                 <a href="">
                     <ion-icon name="home"></ion-icon> Home
@@ -20,7 +20,7 @@
             </div>
             <div class="alumni-info-container">
                 <div class="alumni-info-container-left">
-                    <div class="alumni-info-container-left-img" style="background: url({{ asset('./img/alumni.png') }})">
+                    <div class="alumni-info-container-left-img" style="background: url({{ asset('public/img/alumni.png') }})">
                     </div>
                 </div>
                 <div class="alumni-info-container-right">
@@ -55,7 +55,7 @@
 
             <div class="alumni-info-container">
                 <div class="alumni-info-container-left">
-                    <div class="alumni-info-container-left-img" style="background: url({{ asset('./img/alumni.png') }})">
+                    <div class="alumni-info-container-left-img" style="background: url({{ asset('public/img/alumni.png') }})">
                     </div>
                 </div>
                 <div class="alumni-info-container-right">

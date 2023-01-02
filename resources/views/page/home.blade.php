@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="home">
-        <div class="home__hero bg-asset" style="background: url({{ asset('./img/bgSchool.jpg') }})">
+        <div class="home__hero bg-asset" style="background: url({{ asset('public/img/bgSchool.jpg') }})">
             <div class="blur"></div>
             <div class="home__hero-info">
                 <div class="home__hero-info-title">
@@ -21,30 +21,30 @@
             </div>
             <div class="home__mitra--wrapper">
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/adidas.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/adidas.svg') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/apple.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/apple.svg') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/google.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/google.svg') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/inter.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/inter.svg') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/nike.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/nike.svg') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('img/brand/samsung.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/samsung.svg') }}" alt="" />
                 </div>
             </div>
         </div>
         <div class="home__video">
-            <div class="home__video-wrapper bg-asset" style="background: url({{ asset('./img/bgSchool.jpg') }})">
+            <div class="home__video-wrapper bg-asset" style="background: url({{ asset('public/img/bgSchool.jpg') }})">
                 <div class="home__video-wrapper-info">
                     <div class="home__video-wrapper-info-img bg-asset"
-                        style="background: url({{ asset('./img/bgSchool.jpg') }})">
+                        style="background: url({{ asset('public/img/bgSchool.jpg') }})">
                     </div>
                     <div class="home__video-wrapper-info-title">watch trailer</div>
                     <div class="home__video-wrapper-info-btn btn-show-video-player">
@@ -68,7 +68,7 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus1.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilustration/ilus1.svg') }}" alt="">
                 </div>
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -77,7 +77,8 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus2.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilustration/ilus2.svg') }}"
+                        alt="">
                 </div>
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -86,7 +87,8 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus3.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilustration/ilus3.svg') }}"
+                        alt="">
                 </div>
             </div>
 
@@ -106,8 +108,8 @@
                 </div>
 
                 <div class="home__berita-container">
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -123,9 +125,9 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -141,9 +143,9 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -159,14 +161,14 @@
                             </div>
 
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="video-player">
             <div class="video-player-wrapper">
-                <video autoplay loop muted src="{{ asset('./video/Inggris.mp4') }}"></video>
+                <video autoplay loop muted src="{{ asset('public/video/Inggris.mp4') }}"></video>
             </div>
             <div class="video-player-close btn-circle btn-hide-video-player">
                 &#10005;
@@ -187,7 +189,7 @@
         })
         for (let i = 0; i < 7; i++) {
             $('.home__berita--wrapper__left--scroll').append(`<div class="berita-box">
-                        <div class="berita-box__left" style="background: url({{ asset('./img/juara.jpg') }})"></div>
+                        <div class="berita-box__left" style="background: url({{ asset('public/img/juara.jpg') }})"></div>
                         <div class="berita-box__right">
                             <div class="berita-box__right--title">Kegiatan Pembelajaran Daring</div>
                             <div class="berita-box__right--desc">Lorem ipsum dolor sit amet adipcing ipsum dolor sit

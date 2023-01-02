@@ -7,12 +7,14 @@
                 purwosari
             </p>
         </div>
-        <img class="header__logo" onclick="window.location.href = '/'" src={{ asset('./img/logo.png') }} alt="Logo" />
+        <a href="{{ route('home') }}">
+            <img class="header__logo" src={{ asset('public/img/logo.png') }} alt="Logo" />
+        </a>
         <div class="header__list">
-            <a href="/news" class="header__list--item news-link">NEWS</a>
-            <a href="/ppdb" class="header__list--item ppdb-link">PPDB</a>
-            <a href="/alumni" class="header__list--item alumni-link">ALUMNI</a>
-            <a href="/join" class="header__list--item btn-join">Join Us &rarr;</a>
+            <a href="{{ route('news') }}" class="header__list--item news-link">NEWS</a>
+            <a href="{{ route('ppdb') }}" class="header__list--item ppdb-link">PPDB</a>
+            <a href="{{ route('alumni') }}" class="header__list--item alumni-link">ALUMNI</a>
+            <a href="{{ route('home') }}" class="header__list--item btn-join">Join Us &rarr;</a>
         </div>
 
     </div>
@@ -25,31 +27,31 @@
                 <ion-icon name="close-outline"></ion-icon> Close
             </div>
             <div class="header-popup-head-link">
-                <a href="/ppdb">ppdb</a>
-                <a href="/alumni">alumni</a>
-                <a href="/alumni">join us &rarr;</a>
+                <a href="{{ route('ppdb') }}">ppdb</a>
+                <a href="{{ route('alumni') }}">alumni</a>
+                <a href="{{ route('news') }}">join us &rarr;</a>
             </div>
         </div>
         <div class="header-popup-container">
             <div class="header-popup-container-title">Browse Our Content</div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="/" class="header-popup-container-box-link">Home</a>
-                <a href="/about" class="header-popup-container-box-link">About</a>
+                <a href="{{ route('home') }}" class="header-popup-container-box-link">Home</a>
+                <a href="{{ route('about') }}" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="/" class="header-popup-container-box-link">Home</a>
-                <a href="/about" class="header-popup-container-box-link">About</a>
+                <a href="{{ route('home') }}" class="header-popup-container-box-link">Home</a>
+                <a href="{{ route('about') }}" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Category</div>
-                <a href="/" class="header-popup-container-box-link">Home</a>
-                <a href="/about" class="header-popup-container-box-link">About</a>
+                <a href="{{ route('home') }}" class="header-popup-container-box-link">Home</a>
+                <a href="{{ route('about') }}" class="header-popup-container-box-link">About</a>
                 <a href="" class="header-popup-container-box-link">Prestasi</a>
                 <a href="" class="header-popup-container-box-link">Keunggulan</a>
             </div>
@@ -77,7 +79,7 @@
     <div class="header-phone-container">
         <div class="header-phone-top">
             <div class="header-phone-top__logo">
-                <img src={{ asset('./img/logo.png') }} alt="Logo" />
+                <img src={{ asset('public/img/logo.png') }} alt="Logo" />
                 <p>
                     smk negeri 1 <br />
                     purwosari

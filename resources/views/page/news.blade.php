@@ -4,7 +4,7 @@
         <div class="news-hero bg-asset"
             style="background: url(https://oceanschool.nfb.ca/_nuxt/img/heroBigTitleBg.09689c9.jpg)">
             <div class="news-hero-bc">
-                <a href="">
+                <a href="{{route('home')}}">
                     <ion-icon name="home"></ion-icon> Home
                 </a>
                 <a>/</a>
@@ -27,8 +27,8 @@
                 </div>
 
                 <div class="news-box-container">
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -44,9 +44,9 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -62,9 +62,9 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -80,9 +80,9 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="berita-box">
-                        <div class="berita-box-img" style="background: url({{ asset('./img/kantin.jpg') }})"></div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
                                 <div class="berita-box-info-title-cat">articles</div>
@@ -98,7 +98,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 

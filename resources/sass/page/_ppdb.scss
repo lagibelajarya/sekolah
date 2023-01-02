@@ -26,7 +26,7 @@
                 font-weight: 500;
 
                 & ion-icon {
-                color: white;
+                    color: white;
                     font-size: 2rem;
                 }
             }
@@ -46,6 +46,159 @@
             font-weight: 900;
             font-family: "primary-font", sans-serif;
             text-transform: uppercase;
+        }
+    }
+    &-title {
+        margin: 10rem;
+        display: flex;
+        @media (max-width: 1301px) {
+            flex-direction: column;
+            gap: 15rem;
+        }
+        @media (max-width: 768px) {
+            margin: 10rem 5rem;
+            gap: 10rem;
+        }
+        &-text {
+            width: 50%;
+            @media (max-width: 1301px) {
+                width: -webkit-fill-available;
+            }
+            p {
+                text-transform: uppercase;
+                letter-spacing: -0.02em;
+                font-weight: 900;
+                font-family: "primary-font", sans-serif;
+                text-transform: uppercase;
+                font-size: 8rem;
+                line-height: 100%;
+                color: $color-secondary;
+                margin-bottom: 2rem;
+            }
+            &-btn {
+                background-color: $color-secondary;
+                color: white;
+                font-weight: 500;
+                padding: 2rem 3rem;
+            }
+        }
+        &-ilus {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 10rem;
+            @media (max-width: 1301px) {
+                width: -webkit-fill-available;
+            }
+            @media (max-width: 768px) {
+                gap: 5rem;
+            }
+            & .ilus-box {
+                display: flex;
+                padding: 5rem 3rem;
+                border-radius: 3rem;
+                box-shadow: 0 60px 44px -49px rgba(grey, 0.3);
+                background-color: white;
+                position: relative;
+                width: fit-content;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 3rem;
+                }
+                @media (max-width: 768px) {
+                    align-self: center !important;
+                    width: 100%;
+                    align-items: center;
+                }
+                &:nth-child(1) {
+                    padding-left: 20rem;
+                    & .ilus-box-img {
+                        left: -8rem;
+                        bottom: 3rem;
+                        @media (max-width: 768px) {
+                            left: unset;
+                            bottom: unset;
+                            position: relative;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        padding-left: 3rem;
+                    }
+                }
+                &:nth-child(2) {
+                    padding-left: 20rem;
+                    & .ilus-box-img {
+                        left: -8rem;
+                        bottom: 0rem;
+                        @media (max-width: 768px) {
+                            left: unset;
+                            bottom: unset;
+                            position: relative;
+                        }
+                    }
+                    @media (max-width: 1301px) {
+                        align-self: flex-start;
+                    }
+                    @media (max-width: 768px) {
+                        padding-left: 3rem;
+                    }
+                }
+                &:nth-child(3) {
+                    padding-right: 20rem;
+                    & .ilus-box-img {
+                        right: -8rem;
+                        bottom: 0rem;
+                        @media (max-width: 768px) {
+                            right: unset;
+                            bottom: unset;
+
+                            position: relative;
+                        }
+                    }
+                    @media (max-width: 1301px) {
+                        align-self: center;
+                    }
+                    @media (max-width: 768px) {
+                        padding-right: 3rem;
+                    }
+                }
+
+                &-img {
+                    position: absolute;
+                    height: fit-content;
+
+                    img {
+                        height: 20rem;
+                    }
+                }
+                &-info {
+                    display: flex;
+                    gap: 1rem;
+                    &-1 {
+                        height: 3rem;
+                        width: 3rem;
+                        background-color: $color-secondary;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                    }
+                    &-2 {
+                        p {
+                            font-size: 1.8rem;
+                            &:nth-child(1) {
+                                font-weight: 600;
+                                color: $color-secondary;
+                            }
+                            &:nth-child(2) {
+                                font-weight: 400;
+                                color: rgba($color-secondary, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

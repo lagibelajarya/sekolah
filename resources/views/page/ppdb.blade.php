@@ -11,5 +11,52 @@
             </div>
             <div class="ppdb-hero-title">ppdb blog</div>
         </div>
+        <div class="ppdb-title">
+            <div class="ppdb-title-text">
+                <p>
+                    How can you use Ocean School in your classroom? Free, engaging, informative
+                </p>
+                <div class="ppdb-title-text-btn btn">Explore our resources</div>
+
+            </div>
+            <div class="ppdb-title-ilus">
+                <div class="ilus-box">
+                    <div class="ilus-box-img" style="">
+                        <img src="{{ asset('public/img/ilustration/ilus4.svg') }}" alt="">
+                    </div>
+                    <div class="ilus-box-info">
+                        <div class="ilus-box-info-1 btn-circle">1</div>
+                        <div class="ilus-box-info-2">
+                            <p>sellect collection</p>
+                            <p>and customize it</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ilus-box">
+                    <div class="ilus-box-img" style="">
+                        <img src="{{ asset('public/img/ilustration/ilus5.svg') }}" alt="">
+                    </div>
+                    <div class="ilus-box-info">
+                        <div class="ilus-box-info-1 btn-circle">2</div>
+                        <div class="ilus-box-info-2">
+                            <p>Explore our resources</p>
+                            <p>available in multiple formats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ilus-box" >
+                    <div class="ilus-box-img" style="">
+                        <img src="{{ asset('public/img/ilustration/ilus6.svg') }}" alt="">
+                    </div>
+                    <div class="ilus-box-info">
+                        <div class="ilus-box-info-1 btn-circle">3</div>
+                        <div class="ilus-box-info-2">
+                            <p>Share it with your students</p>
+                            <p> using a link, Microsoft Teams, <br> or Google Classroom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

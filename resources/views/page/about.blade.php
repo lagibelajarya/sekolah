@@ -8,7 +8,7 @@
                     <p>dive into learning</p>
                     <p>Pelopor SMK bidang Teknologi dan Informatika di Indonesia</p>
                 </div>
-                <div class="about__hero-info-img" style="background: url({{ asset('./img/home-bg.jpg') }})">
+                <div class="about__hero-info-img" style="background: url({{ asset('public/img/home-bg.jpg') }})">
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus1.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilus1.svg') }}" alt="">
                 </div>
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -58,7 +58,7 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus2.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilus2.svg') }}" alt="">
                 </div>
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -67,7 +67,7 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('./img/ilus3.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilus3.svg') }}" alt="">
                 </div>
             </div>
 

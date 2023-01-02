@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="{{ asset('./css/main.css') }}">
-    <link rel="shortcut icon" href="{{asset('./img/logo.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('public/css/main.css') }}">
+    <link rel="shortcut icon" href="{{asset('public/img/logo.png')}}" type="image/x-icon">
     <title>Sekolah</title>
 </head>
 
@@ -17,8 +17,8 @@
     @include('layout.footer')
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="{{ asset('./js/jquery.js') }}"></script>
-    <script src="{{ asset('./js/script.js') }}"></script>
+    <script src="{{ asset('public/js/jquery.js') }}"></script>
+    <script src="{{ asset('public/js/script.js') }}"></script>
     @yield('js')
 </body>
 

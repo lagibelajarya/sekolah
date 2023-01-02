@@ -20,7 +20,7 @@
             <div class="footer__wrapper--left">
                 <div class="footer-logo-container">
                     <div class="footer__wrapper--left__logo">
-                        <img src={{ asset('./img/logo.png') }} alt="Logo" />
+                        <img src={{ asset('public/img/logo.png') }} alt="Logo" />
                         <p>
                             smk negeri 1 <br />
                             purwosari

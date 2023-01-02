@@ -139,7 +139,9 @@ body {
         gap: 2rem; }
         .header-popup-head-link a {
           color: #132133;
-          font-size: 1.6rem; }
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 500; }
     .header-popup-container {
       transition: transform 0.3s cubic-bezier(0.83, 0, 0.17, 1);
       width: -webkit-fill-available;
@@ -256,7 +258,7 @@ body {
       font-weight: 500;
       text-transform: uppercase;
       font-family: "primary-font", sans-serif; }
-      @media (max-width: 701px) {
+      @media (max-width: 768px) {
         .header__name-title {
           display: none; } }
   .header__logo {
@@ -269,13 +271,13 @@ body {
       color: white;
       font-size: 1.4rem;
       font-weight: 400; }
-      @media (max-width: 701px) {
+      @media (max-width: 768px) {
         .header__list--item {
           display: none; } }
       .header__list--item.btn-join {
         color: #ffc107;
         transition: all 0.3s; }
-        @media (max-width: 701px) {
+        @media (max-width: 768px) {
           .header__list--item.btn-join {
             display: flex; } }
         .header__list--item.btn-join:hover {
@@ -603,7 +605,8 @@ body {
       justify-content: space-between;
       align-items: center;
       align-self: stretch;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      gap: 5rem; }
       @media only screen and (max-width: 68.75em) {
         .footer__wrapper--right {
           gap: 4rem; } }
@@ -1590,6 +1593,135 @@ body {
       font-weight: 900;
       font-family: "primary-font", sans-serif;
       text-transform: uppercase; }
+  .ppdb-title {
+    margin: 10rem;
+    display: flex; }
+    @media (max-width: 1301px) {
+      .ppdb-title {
+        flex-direction: column;
+        gap: 15rem; } }
+    @media (max-width: 768px) {
+      .ppdb-title {
+        margin: 10rem 5rem;
+        gap: 10rem; } }
+    .ppdb-title-text {
+      width: 50%; }
+      @media (max-width: 1301px) {
+        .ppdb-title-text {
+          width: -webkit-fill-available; } }
+      .ppdb-title-text p {
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        font-weight: 900;
+        font-family: "primary-font", sans-serif;
+        text-transform: uppercase;
+        font-size: 8rem;
+        line-height: 100%;
+        color: #132133;
+        margin-bottom: 2rem; }
+      .ppdb-title-text-btn {
+        background-color: #132133;
+        color: white;
+        font-weight: 500;
+        padding: 2rem 3rem; }
+    .ppdb-title-ilus {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 10rem; }
+      @media (max-width: 1301px) {
+        .ppdb-title-ilus {
+          width: -webkit-fill-available; } }
+      @media (max-width: 768px) {
+        .ppdb-title-ilus {
+          gap: 5rem; } }
+      .ppdb-title-ilus .ilus-box {
+        display: flex;
+        padding: 5rem 3rem;
+        border-radius: 3rem;
+        box-shadow: 0 60px 44px -49px rgba(128, 128, 128, 0.3);
+        background-color: white;
+        position: relative;
+        width: fit-content; }
+        @media (max-width: 768px) {
+          .ppdb-title-ilus .ilus-box {
+            flex-direction: column;
+            gap: 3rem; } }
+        @media (max-width: 768px) {
+          .ppdb-title-ilus .ilus-box {
+            align-self: center !important;
+            width: 100%;
+            align-items: center; } }
+        .ppdb-title-ilus .ilus-box:nth-child(1) {
+          padding-left: 20rem; }
+          .ppdb-title-ilus .ilus-box:nth-child(1) .ilus-box-img {
+            left: -8rem;
+            bottom: 3rem; }
+            @media (max-width: 768px) {
+              .ppdb-title-ilus .ilus-box:nth-child(1) .ilus-box-img {
+                left: unset;
+                bottom: unset;
+                position: relative; } }
+          @media (max-width: 768px) {
+            .ppdb-title-ilus .ilus-box:nth-child(1) {
+              padding-left: 3rem; } }
+        .ppdb-title-ilus .ilus-box:nth-child(2) {
+          padding-left: 20rem; }
+          .ppdb-title-ilus .ilus-box:nth-child(2) .ilus-box-img {
+            left: -8rem;
+            bottom: 0rem; }
+            @media (max-width: 768px) {
+              .ppdb-title-ilus .ilus-box:nth-child(2) .ilus-box-img {
+                left: unset;
+                bottom: unset;
+                position: relative; } }
+          @media (max-width: 1301px) {
+            .ppdb-title-ilus .ilus-box:nth-child(2) {
+              align-self: flex-start; } }
+          @media (max-width: 768px) {
+            .ppdb-title-ilus .ilus-box:nth-child(2) {
+              padding-left: 3rem; } }
+        .ppdb-title-ilus .ilus-box:nth-child(3) {
+          padding-right: 20rem; }
+          .ppdb-title-ilus .ilus-box:nth-child(3) .ilus-box-img {
+            right: -8rem;
+            bottom: 0rem; }
+            @media (max-width: 768px) {
+              .ppdb-title-ilus .ilus-box:nth-child(3) .ilus-box-img {
+                right: unset;
+                bottom: unset;
+                position: relative; } }
+          @media (max-width: 1301px) {
+            .ppdb-title-ilus .ilus-box:nth-child(3) {
+              align-self: center; } }
+          @media (max-width: 768px) {
+            .ppdb-title-ilus .ilus-box:nth-child(3) {
+              padding-right: 3rem; } }
+        .ppdb-title-ilus .ilus-box-img {
+          position: absolute;
+          height: fit-content; }
+          .ppdb-title-ilus .ilus-box-img img {
+            height: 20rem; }
+        .ppdb-title-ilus .ilus-box-info {
+          display: flex;
+          gap: 1rem; }
+          .ppdb-title-ilus .ilus-box-info-1 {
+            height: 3rem;
+            width: 3rem;
+            background-color: #132133;
+            color: white;
+            font-weight: 600;
+            font-size: 1.8rem; }
+          .ppdb-title-ilus .ilus-box-info-2 p {
+            font-size: 1.8rem; }
+            .ppdb-title-ilus .ilus-box-info-2 p:nth-child(1) {
+              font-weight: 600;
+              color: #132133; }
+            .ppdb-title-ilus .ilus-box-info-2 p:nth-child(2) {
+              font-weight: 400;
+              color: rgba(19, 33, 51, 0.5); }
 
 .news {
   width: -webkit-fill-available; }
@@ -1757,3 +1889,77 @@ body {
               @media only screen and (max-width: 62.5em) {
                 .news-box-container .berita-box-info-date-2 {
                   font-size: 1.4rem; } }
+
+.detail-news {
+  background-color: #eff3f3;
+  width: -webkit-fill-available; }
+  .detail-news-hero {
+    padding: 5rem;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .detail-news-hero-bc {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 5rem; }
+      .detail-news-hero-bc a {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #132133;
+        transition: all 0.3s; }
+        .detail-news-hero-bc a:hover {
+          transform: scale(1.1); }
+      .detail-news-hero-bc p {
+        color: #132133;
+        font-size: 2rem; }
+    .detail-news-hero-info-cat {
+      color: #132133;
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      background-color: #132133;
+      color: white;
+      width: fit-content;
+      padding: 1rem 3rem;
+      border-radius: 3rem; }
+    .detail-news-hero-info-title {
+      color: #132133;
+      font-family: "primary-font", sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 6.7rem;
+      line-height: 0.9;
+      margin: 2rem 0; }
+    .detail-news-hero-info-desc {
+      color: #132133;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 2.4rem;
+      margin-bottom: 5rem; }
+    .detail-news-hero-info-date {
+      display: flex;
+      gap: 3rem; }
+      .detail-news-hero-info-date p {
+        font-size: 1.4rem; }
+        .detail-news-hero-info-date p:nth-child(1) {
+          color: #132133;
+          font-family: "primary-font", sans-serif;
+          text-transform: uppercase;
+          font-weight: 900; }
+        .detail-news-hero-info-date p:nth-child(2) {
+          text-transform: capitalize;
+          color: rgba(19, 33, 51, 0.8); }
+  .detail-news-content-img {
+    margin: 0 3rem 3rem 3rem;
+    border-radius: 3rem;
+    width: -webkit-fill-available;
+    height: 50vw; }
+  .detail-news-content-text p {
+    font-size: 2.4rem;
+    color: rgba(19, 33, 51, 0.8);
+    margin: 5rem 10rem; }
+    @media (max-width: 768px) {
+      .detail-news-content-text p {
+        margin: 5rem; } }
