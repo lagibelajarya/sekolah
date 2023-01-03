@@ -13,7 +13,8 @@
             </div>
         </div>
         <div class="about__info">
-            <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
+            <div class="section-title">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
                     <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#fff"></path>
                 </svg>
                 <p>tentang kita</p>
@@ -39,38 +40,18 @@
                 </div>
             </div>
         </div>
-        <div class="home__action">
- 
-            <div class="home__action-wrapper">
-                <div class="home__action-item">
-                    <div class="home__action-item-title">
-                        <p>Keunggulan</p>
-                        <div class="home__action-item-title-btn">
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <img class="home__action-item-img" src="{{ asset('public/img/ilus1.svg') }}" alt="">
+        <div class="about__map">
+            <div class="about__map-title">
+                <div class="about__map-title-1">Location SMKN 1 Purwosari</div>
+                <div class="about__map-title-2">
+                    <p>We are very proud to share that Ocean School is nominated as a finalist for a
+                        for the collection “The Harvest” (Bák̓vṇx̌). </p>
                 </div>
-                <div class="home__action-item">
-                    <div class="home__action-item-title">
-                        <p>Fasilitas</p>
-                        <div class="home__action-item-title-btn">
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <img class="home__action-item-img" src="{{ asset('public/img/ilus2.svg') }}" alt="">
-                </div>
-                <div class="home__action-item">
-                    <div class="home__action-item-title">
-                        <p>Prestasi</p>
-                        <div class="home__action-item-title-btn">
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <img class="home__action-item-img" src="{{ asset('public/img/ilus3.svg') }}" alt="">
-                </div>
+                <a href="" class="about__map-title-btn btn">Open In Google Maps</a>
             </div>
-
+            <div class="about__map-content">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
 @endsection
@@ -79,5 +60,33 @@
         $(window).scroll(function() {
             navScroll(100);
         })
+        var map = L.map('map', {
+            zoomControl: false
+        }).setView([-7.752371, 112.696571], 13);
+
+        var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            minZoom: 10,
+            maxZoom: 17,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker([-7.752371, 112.696571]).addTo(map)
+            .bindPopup('<b>Hello Guys!</b><br />Ini Adalah Rumah Saya.').openPopup();
+
+        var circle = L.circle([-7.752404, 112.696550], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map).bindPopup('Area Rumah Saya.');
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent('You clicked the map at ' + e.latlng.toString())
+                .openOn(map);
+        }
+
+        map.on('click', onMapClick);
     </script>
 @endsection

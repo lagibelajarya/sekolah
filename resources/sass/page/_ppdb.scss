@@ -202,4 +202,214 @@
             }
         }
     }
+    // &-step {
+    //     width: 100%;
+    //     background-color: white;
+    //     padding: 0 10rem  5rem 10rem;
+    //     &-wrapper {
+    //         display: flex;
+    //         justify-content: center;
+    //         flex-wrap: wrap;
+    //         gap: 2.4rem;
+    //         &-item {
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             justify-content: center;
+    //             gap: 1rem;
+    //             border-radius: .5rem;
+    //             padding: 2rem;
+    //             box-shadow: 0 0 1rem rgba(grey, 0.2);
+    //             width: 30rem;
+    //             height: 23rem;
+    //             &-icon {
+    //                 & ion-icon {
+    //                     font-size: 4rem;
+    //                 }
+    //             }
+    //             &-title {
+    //                 font-size: 2.4rem;
+    //                 font-weight: 400;
+    //                 color: $color-secondary;
+    //             }
+    //             &-desc {
+    //                 font-size: 1.4rem;
+    //                 font-weight: 400;
+    //                 color: rgba($color-secondary, 0.7);
+    //             }
+    //         }
+    //     }
+    // }
+
+    &-form {
+        &-wrapper {
+            border-radius: 3rem;
+            overflow: hidden;
+            background-color: white;
+            &-head {
+                padding: 3rem;
+                background: white;
+                box-shadow: rgba(black, 0.12) 0px 0px 20px 0px;
+                display: flex;
+                justify-content: space-between;
+                &-title {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: $color-secondary;
+
+                    & ion-icon {
+                        font-size: 3rem;
+                        color: lightgreen;
+                    }
+                }
+                &-link {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: $color-secondary;
+                }
+            }
+            &-content {
+                display: flex;
+                padding: 3rem 0 5rem 0;
+
+                @media (max-width: 900px) {
+                    flex-direction: column;
+                }
+                &-right {
+                    width: 100%;
+                    & .ppdb-info {
+                        background-color: white;
+                        &-wrapper {
+                            margin: 3rem;
+                            padding: 2rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5rem;
+                            background: rgba(#ffd953, 0.1);
+                            border-radius: 1rem;
+                            &-head {
+                                font-size: 3.6rem;
+                                font-weight: 500;
+                                color: #fbab33;
+                            }
+                            &-content {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 3rem;
+                                &-item {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    gap: 1rem;
+                                    & ion-icon {
+                                        font-size: 2.4rem;
+                                        min-height: 2.4rem;
+                                        min-width: 2.4rem;
+                                        color: #fbab33;
+                                    }
+                                    & p {
+                                        font-size: 1.6rem;
+                                        font-weight: 400;
+                                        color: #fbab33;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-left {
+                    width: 100%;
+
+                    & .form {
+                        &-wrapper {
+                            padding: 2rem;
+                            &-head {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+                                & p {
+                                    &:nth-child(1) {
+                                        display: flex;
+                                        gap: 1rem;
+                                        align-items: center;
+                                        font-size: 2.4rem;
+                                        color: $color-secondary;
+                                        font-weight: 500;
+                                        & ion-icon {
+                                            font-size: 3rem;
+                                            color: lightgreen;
+                                        }
+                                    }
+                                    &:nth-child(2) {
+                                        font-size: 1.8rem;
+                                        font-size: 400;
+                                        color: rgba($color-secondary, 0.7);
+                                    }
+                                }
+                            }
+                            & hr {
+                                border: none;
+                                border-top: solid 1px rgba(grey, 0.5);
+                                margin: 2rem 0;
+                                width: 100%;
+                            }
+                            &-content {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2rem;
+                                & .form-input,
+                                & .form-select {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1rem;
+                                    label {
+                                        font-size: 2rem;
+                                        text-transform: capitalize;
+                                        span {
+                                            color: red;
+                                        }
+                                    }
+                                    input,
+                                    select {
+                                        padding: 1.5rem 2.4rem;
+                                        border-radius: 1rem;
+                                        background-color: white;
+                                        font-size: 1.6rem;
+                                        outline: none;
+                                        border: solid 1px rgba(grey, 0.5);
+                                        cursor: pointer;
+                                        text-transform: capitalize;
+                                        &::placeholder {
+                                            text-transform: capitalize;
+                                        }
+                                        & option {
+                                            text-transform: capitalize;
+                                        }
+                                    }
+                                }
+                                &-btn {
+                                    background: $color-secondary;
+                                    font-weight: 400;
+                                    color: white;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    text-transform: uppercase;
+                                    transition: all 0.3s;
+                                    &:hover {
+                                        background: white;
+                                        color: $color-secondary;
+                                        border: solid 1px $color-secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

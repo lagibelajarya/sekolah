@@ -12,10 +12,9 @@
 
             </div>
         </div>
-
         <div class="home__mitra">
             <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
-                    <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#eff3f3"></path>
+                    <path d="M0 40C137.185 40 125.676 0 240 0s103.999 40 240 40H0Z" fill="#fff"></path>
                 </svg>
                 <p>sponsor ship</p>
             </div>
@@ -58,8 +57,150 @@
         </div>
 
 
+        <div class="home__fas">
+            <div class="home__fas-wrapper">
+                <div class="home__fas-wrapper-head">
+                    <div class="home__fas-wrapper-head-title">fasilitas SMKN 1</div>
+                    <div class="home__fas-wrapper-head-paginate">
+                        <div class="button-prev btn-circle">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="button-next btn-circle">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
 
-        <div class="home__action">
+                </div>
+                <div class="home__fas-wrapper-content">
+
+                    <div class="swiper SwiperHome">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="berita-box">
+                                    <div class="berita-box-img bg-asset"
+                                        style="background: url({{ asset('public/img/juara.jpg') }})"></div>
+                                    <div class="berita-box-info">
+
+                                        <div class="berita-box-info-cat">
+                                            <div class="berita-box-info-cat-item btn">tecnology</div>
+                                            <div class="berita-box-info-cat-item btn">food</div>
+                                        </div>
+                                        <div class="berita-box-info-title">
+                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
+                                                doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
+                                            </div>
+                                        </div>
+                                        <div class="berita-box-info-date">
+                                            <div class="berita-box-info-date-1">
+                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                <p>1, jannuary 2023</p>
+                                            </div>
+                                            <div class="berita-box-info-date-2">1, jannuary 2023</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="berita-box">
+                                    <div class="berita-box-img bg-asset"
+                                        style="background: url({{ asset('public/img/juara2.jpg') }})"></div>
+                                    <div class="berita-box-info">
+
+                                        <div class="berita-box-info-cat">
+                                            <div class="berita-box-info-cat-item btn">tecnology</div>
+                                            <div class="berita-box-info-cat-item btn">food</div>
+                                        </div>
+                                        <div class="berita-box-info-title">
+                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
+                                                doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
+                                            </div>
+                                        </div>
+                                        <div class="berita-box-info-date">
+                                            <div class="berita-box-info-date-1">
+                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                <p>1, jannuary 2023</p>
+                                            </div>
+                                            <div class="berita-box-info-date-2">1, jannuary 2023</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="berita-box">
+                                    <div class="berita-box-img bg-asset"
+                                        style="background: url({{ asset('public/img/juara3.jpg') }})"></div>
+                                    <div class="berita-box-info">
+
+                                        <div class="berita-box-info-cat">
+                                            <div class="berita-box-info-cat-item btn">tecnology</div>
+                                            <div class="berita-box-info-cat-item btn">food</div>
+                                        </div>
+                                        <div class="berita-box-info-title">
+                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
+                                                doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
+                                            </div>
+                                        </div>
+                                        <div class="berita-box-info-date">
+                                            <div class="berita-box-info-date-1">
+                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                <p>1, jannuary 2023</p>
+                                            </div>
+                                            <div class="berita-box-info-date-2">1, jannuary 2023</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="berita-box">
+                                    <div class="berita-box-img bg-asset"
+                                        style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
+                                    <div class="berita-box-info">
+
+                                        <div class="berita-box-info-cat">
+                                            <div class="berita-box-info-cat-item btn">tecnology</div>
+                                            <div class="berita-box-info-cat-item btn">food</div>
+                                        </div>
+                                        <div class="berita-box-info-title">
+                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
+                                                doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
+                                            </div>
+                                        </div>
+                                        <div class="berita-box-info-date">
+                                            <div class="berita-box-info-date-1">
+                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                <p>1, jannuary 2023</p>
+                                            </div>
+                                            <div class="berita-box-info-date-2">1, jannuary 2023</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        {{-- <div class="home__action">
             <div class="home__action-wrapper">
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -68,7 +209,8 @@
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </div>
                     </div>
-                    <img class="home__action-item-img" src="{{ asset('public/img/ilustration/ilus1.svg') }}" alt="">
+                    <img class="home__action-item-img" src="{{ asset('public/img/ilustration/ilus1.svg') }}"
+                        alt="">
                 </div>
                 <div class="home__action-item">
                     <div class="home__action-item-title">
@@ -92,7 +234,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> --}}
 
         <div class="home__berita">
             <div class="section-title"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
@@ -109,6 +251,9 @@
 
                 <div class="home__berita-container">
                     <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-btn btn-circle">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
                         <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
@@ -127,6 +272,9 @@
                         </div>
                     </a>
                     <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-btn btn-circle">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
                         <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
@@ -145,6 +293,9 @@
                         </div>
                     </a>
                     <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-btn btn-circle">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
                         <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
@@ -179,6 +330,15 @@
 
 @section('js')
     <script type="text/javascript">
+        var swiper = new Swiper(".SwiperHome", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+
+        });
         $('.btn-show-video-player').on("click", function() {
             $('.video-player').addClass('show')
 
