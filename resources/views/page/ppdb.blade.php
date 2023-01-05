@@ -104,6 +104,11 @@
                         Daftar menjadi Siswa baru SMKN 1 Purwosari
                     </div>
                     <div class="ppdb-form-wrapper-head-link">Privacy Police</div>
+                    <div class="ppdb-form-wrapper-head-prog progress-bar">
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ppdb-form-wrapper-content">
                     <div class="ppdb-form-wrapper-content-right">
@@ -147,21 +152,27 @@
                                     </p>
                                     <p>if you have more more than one account, you can add them and easily switch between
                                     </p>
+
                                 </div>
                                 <hr>
                                 <form class="form-wrapper-content">
                                     @csrf
-                                    <div class="form-input">
+                                    <div class="form-input input-nama">
                                         <label for="">nama lengkap <span>*</span></label>
                                         <input type="text" placeholder="muhammad rifaldi">
                                     </div>
-                                    <div class="form-input">
+                                    <div class="form-input input-email">
+                                        <label for="">email<span>*</span></label>
+                                        <input type="email" placeholder="rifald84@gmail.com">
+                                    </div>
+                                    <div class="form-input input-tanggal">
                                         <label for="">tanggal lahir <span>*</span></label>
                                         <input type="date" placeholder="">
                                     </div>
                                     <div class="form-select">
                                         <label for="selectAgama">agama <span>*</span></label>
-                                        <select name="selectAgama" id="selectAgama" onchange="onChangeSelect()">
+                                        <select name="selectAgama" id="selectAgama">
+                                            <option value="">Tidak Ada</option>
                                             <option value="islam">islam</option>
                                             <option value="kristen">kristen</option>
                                             <option value="hindu">hindu</option>
@@ -182,8 +193,122 @@
 @endsection
 @section('js')
     <script>
-        function onChangeSelect() {
-            alert($('#selectAgama').val())
+        var progressVal = 0;
+        let fillValName = false;
+        let fillValEmail = false;
+        let fillValTgl = false;
+        let fillValAgm = false;
+
+
+
+        function addVal() {
+            return progressVal += 25
         }
+
+        function lessVal() {
+            return progressVal -= 25
+        }
+
+        function toggleValName() {
+            if (fillValName) {
+                addVal()
+            } else {
+                lessVal()
+            }
+        }
+
+        function toggleValEmail() {
+            if (fillValEmail) {
+                addVal()
+            } else {
+                lessVal()
+            }
+        }
+
+        function toggleValTgl() {
+            if (fillValTgl) {
+                addVal()
+            } else {
+                lessVal()
+            }
+        }
+
+        function toggleValAgm() {
+            if (fillValAgm) {
+                addVal()
+            } else {
+                lessVal()
+            }
+        }
+        let setVal = async () => {
+            await $('.progress-bar .bar .progress').css('max-width', `${progressVal}%`)
+            if (progressVal == 100) {
+                $('.progress-bar .bar .progress').css('background ', 'green')
+            }
+        }
+        $('.input-nama input').focus(function() {
+
+            $('.input-nama input').on('keyup', function() {
+                if ($('.input-nama input').val() != 0 && fillValName == false) {
+                    fillValName = true
+                    toggleValName()
+                    setVal()
+                    console.log(progressVal)
+                } else if ($('.input-nama input').val() == 0 && fillValName == true) {
+                    fillValName = false
+                    toggleValName()
+                    setVal()
+                    console.log(progressVal)
+                }
+            })
+
+        })
+
+        // input email
+        $('.input-email input').focus(function() {
+            $('.input-email input').on('keyup', function() {
+                if ($('.input-email input').val() != 0 && fillValEmail == false) {
+                    fillValEmail = true
+                    toggleValEmail()
+                    setVal()
+                    console.log(progressVal)
+                } else if ($('.input-email input').val() == 0 && fillValEmail == true) {
+                    fillValEmail = false
+                    toggleValEmail()
+                    setVal()
+                    console.log(progressVal)
+                }
+            })
+        })
+        // input tanggal
+
+        $('.input-tanggal input').on('change', function() {
+            if ($('.input-tanggal input').val() != 0 && fillValTgl == false) {
+                fillValTgl = true
+                toggleValTgl()
+                setVal()
+                console.log(progressVal)
+            } else if ($('.input-tanggal input').val() == 0 && fillValTgl == true) {
+                fillValTgl = false
+                toggleValTgl()
+                setVal()
+                console.log(progressVal)
+            }
+        })
+
+        // input agama
+        $('#selectAgama').on('change', function() {
+            if ($('#selectAgama').val() != 0 && fillValAgm == false) {
+                fillValAgm = true
+                toggleValAgm()
+                setVal()
+                console.log(progressVal)
+            } else if ($('#selectAgama').val() == 0 && fillValAgm == true) {
+                fillValAgm = false
+                toggleValAgm()
+                setVal()
+                console.log(progressVal)
+            }
+        })
     </script>
 @endsection

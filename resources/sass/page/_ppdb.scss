@@ -252,6 +252,8 @@
                 box-shadow: rgba(black, 0.12) 0px 0px 20px 0px;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                position: relative;
                 &-title {
                     display: flex;
                     align-items: center;
@@ -269,6 +271,25 @@
                     font-size: 1.6rem;
                     font-weight: 400;
                     color: $color-secondary;
+                }
+                &-prog {
+                    transition: all 0.3s;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    & .bar {
+                        height: 0.5rem;
+                        background-color: lightblue;
+                        & .progress {
+                            transition: all 0.3s;
+                            height: 100%;
+                            width: 100%;
+                            max-width: 0;
+                            background-color: #185abc;
+                            border-radius: 1rem;
+                        }
+                    }
                 }
             }
             &-content {
@@ -380,7 +401,6 @@
                                         font-size: 1.6rem;
                                         outline: none;
                                         border: solid 1px rgba(grey, 0.5);
-                                        cursor: pointer;
                                         text-transform: capitalize;
                                         &::placeholder {
                                             text-transform: capitalize;

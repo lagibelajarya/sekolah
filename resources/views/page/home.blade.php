@@ -337,7 +337,20 @@
                 nextEl: ".button-next",
                 prevEl: ".button-prev",
             },
-
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                900: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
         });
         $('.btn-show-video-player').on("click", function() {
             $('.video-player').addClass('show')
