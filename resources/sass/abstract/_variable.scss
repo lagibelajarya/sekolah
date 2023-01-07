@@ -39,8 +39,20 @@ $color-blue: #60c1f8;
     opacity: 1 !important;
     visibility: visible !important;
 }
-.trans-0 {
-    transform: translate(0, 0) !important;
+.hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.trans {
+    &-0 {
+        transform: translate(0, 0) !important;
+    }
+    &-y-100 {
+        transform: translateY(-100%);
+    }
+    &-y100 {
+        transform: translateY(100%);
+    }
 }
 .btn-top-swipe {
     top: -2.5rem !important;

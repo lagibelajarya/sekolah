@@ -124,7 +124,6 @@
     font-weight: 600;
     cursor: pointer;
     width: fit-content;
-    
 }
 .bg-second {
     background: $color-secondary;
@@ -159,17 +158,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: 768px) {
+            font-size: 1.4rem;
+        }
     }
     svg {
         height: 5rem;
-    }
-
-    @media (max-width: 768px) {
-        svg {
+        @media (max-width: 768px) {
             height: 4rem;
         }
-        p {
-            font-size: 1.4rem;
+        @media (max-width: 600px) {
+            height: 3rem;
         }
     }
 }

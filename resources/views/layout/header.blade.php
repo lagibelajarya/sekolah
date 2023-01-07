@@ -15,7 +15,25 @@
             <a href="{{ route('alumni') }}" class="header__list--item alumni-link">ALUMNI</a>
             {{-- <a href="{{ route('home') }}" class="header__list--item btn-join">Join Us &rarr;</a> --}}
         </div>
-
+    </div>
+</header>
+<header class="header-top">
+    <div class="header-top-container">
+        <div class="header-top__name btn-show-header-popup">
+            <ion-icon name="menu-outline" class="header-top__name-btn"></ion-icon>
+            <p class="header-top__name-title">
+                mts nu pakis
+            </p>
+        </div>
+        <a href="{{ route('home') }}">
+            <img class="header-top__logo" src={{ asset('public/img/logoPakis.png') }} alt="Logo" />
+        </a>
+        <div class="header-top__list">
+            <a href="{{ route('news') }}" class="header__list--item news-link">berita</a>
+            <a href="{{ route('ppdb') }}" class="header__list--item ppdb-link">PPDB</a>
+            <a href="{{ route('alumni') }}" class="header__list--item alumni-link">ALUMNI</a>
+            {{-- <a href="{{ route('home') }}" class="header__list--item btn-join">Join Us &rarr;</a> --}}
+        </div>
     </div>
 </header>
 
@@ -34,13 +52,6 @@
         </div>
         <div class="header-popup-container">
             <div class="header-popup-container-title">Browse Our Content</div>
-            <div class="header-popup-container-box">
-                <div class="header-popup-container-box-title">Halaman</div>
-                <a href="{{ route('home') }}" class="header-popup-container-box-link">Beranda</a>
-                <a href="{{ route('about') }}" class="header-popup-container-box-link">Tentang</a>
-                <a href="" class="header-popup-container-box-link">Prestasi</a>
-                <a href="" class="header-popup-container-box-link">Keunggulan</a>
-            </div>
             <div class="header-popup-container-box">
                 <div class="header-popup-container-box-title">Halaman</div>
                 <a href="{{ route('home') }}" class="header-popup-container-box-link">Beranda</a>
