@@ -270,7 +270,8 @@ body {
     .header__list--item {
       color: white;
       font-size: 1.4rem;
-      font-weight: 400; }
+      font-weight: 400;
+      text-transform: uppercase; }
       @media (max-width: 768px) {
         .header__list--item {
           display: none; } }
@@ -511,7 +512,8 @@ body {
       font-size: 3.4vw;
       line-height: 125%;
       font-weight: 400;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-transform: capitalize; }
     .prefooter-info-btn {
       display: flex;
       align-items: center;
@@ -731,9 +733,12 @@ body {
           font-weight: 900;
           font-family: "primary-font", sans-serif;
           text-transform: uppercase; }
+          .home__hero-info-title p:nth-child(1) span {
+            color: #ffc107; }
         .home__hero-info-title p:nth-child(2) {
           margin: 2rem;
-          font-size: 2.4rem; }
+          font-size: 2.4rem;
+          text-transform: capitalize; }
   .home__mitra {
     padding: 5rem;
     width: 100%;
@@ -755,6 +760,8 @@ body {
       flex-wrap: wrap;
       max-width: 144rem;
       width: 100%; }
+      .home__mitra--wrapper__box img {
+        height: 5rem; }
   .home__video {
     width: 100%; }
     .home__video-wrapper {
@@ -1412,10 +1419,9 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url("../img/home-bg.jpg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 150%;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     margin: 2rem 2rem 0 2rem;
     border-radius: 3rem;
     overflow: hidden; }
@@ -1480,6 +1486,7 @@ body {
       .about__info-container-right {
         width: -webkit-fill-available; }
         .about__info-container-right-title {
+          text-transform: capitalize;
           margin-bottom: 5rem;
           color: #132133;
           font-size: 2.6rem;
@@ -1500,13 +1507,21 @@ body {
           margin-bottom: 8rem;
           color: #132133;
           font-size: 2.4rem; }
-        .about__info-container-left-img img {
-          height: 38rem;
-          width: 53.5rem; }
+        .about__info-container-left-img {
+          border-radius: 2rem;
+          overflow: hidden;
+          height: 36rem;
+          width: 51.5rem; }
+          @media (max-width: 1200px) {
+            .about__info-container-left-img {
+              margin-bottom: 5rem; } }
           @media (max-width: 701px) {
-            .about__info-container-left-img img {
+            .about__info-container-left-img {
               height: calc(38rem / 1.5);
               width: calc(53.5rem / 1.5); } }
+          .about__info-container-left-img-src {
+            height: 100%;
+            width: 100%; }
   .about__map {
     position: relative;
     display: flex;
@@ -1531,7 +1546,8 @@ body {
         font-size: 3.2rem;
         font-weight: 400;
         color: #132133;
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem;
+        text-transform: capitalize; }
       .about__map-title-2 {
         font-size: 2.4rem;
         font-weight: 400;
@@ -2086,6 +2102,16 @@ body {
         @media (max-width: 701px) {
           .news-box-container .berita-box {
             width: 100%; } }
+        .news-box-container .berita-box-btn {
+          height: 4rem;
+          width: 4rem;
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+          background-color: white;
+          z-index: 10; }
+          .news-box-container .berita-box-btn ion-icon {
+            font-size: 2.4rem; }
         .news-box-container .berita-box-img {
           background-repeat: no-repeat !important;
           background-size: cover !important;

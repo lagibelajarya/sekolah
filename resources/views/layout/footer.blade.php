@@ -1,7 +1,7 @@
-<footer class="prefooter bg-asset" style="background: url(https://oceanschool.nfb.ca/_nuxt/img/bgFooter.a28e693.webp)">
+<footer class="prefooter bg-asset" style="background: url({{ asset('public/img/heroAlumni.jpg') }})">
     <div class="prefooter-info ">
-        <div class="prefooter-info-title">Take the <br> plunge!</div>
-        <div class="prefooter-info-desc">Let the ocean be your classroom</div>
+        <div class="prefooter-info-title">bergabung <br>dengan kita?</div>
+        <div class="prefooter-info-desc">daftar dan bersekolah di mts nu pakis</div>
         <div class="prefooter-info-btn btn">
             <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16" role="img">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -9,7 +9,7 @@
                     </path>
                 </svg></p>
             <p>
-                explose our content
+                Kunjungi PPDB
             </p>
         </div>
     </div>
@@ -20,10 +20,10 @@
             <div class="footer__wrapper--left">
                 <div class="footer-logo-container">
                     <div class="footer__wrapper--left__logo">
-                        <img src={{ asset('public/img/logo.png') }} alt="Logo" />
+                        <img src={{ asset('public/img/logoPakis.png') }} alt="Logo" />
                         <p>
-                            smk negeri 1 <br />
-                            purwosari
+                            mts nu <br />
+                            pakis
                         </p>
                     </div>
 
@@ -36,7 +36,7 @@
                     <div class="footer__wrapper--left__box--item">Contact</div>
                     <div class="footer__wrapper--left__box--item">Siswa</div>
                     <div class="footer__wrapper--left__box--item">Guru</div>
-                
+
                 </div>
 
             </div>
@@ -44,7 +44,7 @@
 
                 <div class="footer__wrapper--right__btn">
                     <div class="footer__wrapper--right__btn-wrapper">
-                        <p>Our Newsletter</p>
+                        <p>Berita Kita</p>
                         <p>
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </p>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="footer__wrapper--right__cr">Copyright SMKN 1 Purwosari 2022 © All rights reserved.</div>
+                <div class="footer__wrapper--right__cr">Copyright Hawari Tiger Enggine 2022 © All rights reserved.</div>
             </div>
         </div>
 
@@ -86,15 +86,15 @@
                         <ion-icon name="location"></ion-icon>
                     </p>
                     <p>
-                        Jl. Raya Purwosari No. 1, Kec Purwosari, <br />
-                        Kab Pasuruan, Jawa Timur 67162
+                        Jl. Raya Bunut Wetan No. 986, <br />
+                        Kec. Pakis, Kab. Malang
                     </p>
                 </div>
                 <div class="footer__bottom--left__email">
                     <p>
                         <ion-icon name="mail"></ion-icon>
                     </p>
-                    <p>purwosarismkn1@yahoo.co.id</p>
+                    <p>mtsnupakis@gmail.com</p>
                 </div>
             </div>
         </div>

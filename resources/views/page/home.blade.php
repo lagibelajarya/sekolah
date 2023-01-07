@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="home">
-        <div class="home__hero bg-asset" style="background: url({{ asset('public/img/bgSchool.jpg') }})">
+        <div class="home__hero bg-asset" style="background: url({{ asset('public/img/heroPakis.jpg') }})">
             <div class="blur"></div>
             <div class="home__hero-info">
                 <div class="home__hero-info-title">
-                    <p>smkn 1 purwosari</p>
-                    <p>Pelopor SMK bidang Teknologi dan Informatika di Indonesia</p>
+                    <p>Madrasah <span> Tsanawiyah </span> nu pakis </p>
+                    <p>islami cerdas berprestasi</p>
                 </div>
 
             </div>
@@ -20,35 +20,38 @@
             </div>
             <div class="home__mitra--wrapper">
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/adidas.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/logoPgri.png') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/apple.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/logoNu.png') }}" alt="" />
+                </div>
+
+                <div class="home__mitra--wrapper__box">
+                    <img src="{{ asset('public/img/brand/logoPgri.png') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/google.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/logoNu.png') }}" alt="" />
+                </div>
+
+                <div class="home__mitra--wrapper__box">
+                    <img src="{{ asset('public/img/brand/logoPgri.png') }}" alt="" />
                 </div>
                 <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/inter.svg') }}" alt="" />
+                    <img src="{{ asset('public/img/brand/logoNu.png') }}" alt="" />
                 </div>
-                <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/nike.svg') }}" alt="" />
-                </div>
-                <div class="home__mitra--wrapper__box">
-                    <img src="{{ asset('public/img/brand/samsung.svg') }}" alt="" />
-                </div>
+
             </div>
         </div>
         <div class="home__video">
-            <div class="home__video-wrapper bg-asset" style="background: url({{ asset('public/img/bgSchool.jpg') }})">
+            <div class="home__video-wrapper bg-asset" style="background: url({{ asset('public/img/pakis2.jpg') }})">
                 <div class="home__video-wrapper-info">
                     <div class="home__video-wrapper-info-img bg-asset"
-                        style="background: url({{ asset('public/img/bgSchool.jpg') }})">
+                        style="background: url({{ asset('public/img/pakis2.jpg') }})">
                     </div>
-                    <div class="home__video-wrapper-info-title">watch trailer</div>
+                    <div class="home__video-wrapper-info-title">sambutan</div>
                     <div class="home__video-wrapper-info-btn btn-show-video-player">
                         <ion-icon name="play-outline"></ion-icon>
-                        <p class="home__video-wrapper-info-btn-txt">play video</p>
+                        <p class="home__video-wrapper-info-btn-txt">putar video</p>
                     </div>
                 </div>
                 <div class="blur"></div>
@@ -60,7 +63,7 @@
         <div class="home__fas">
             <div class="home__fas-wrapper">
                 <div class="home__fas-wrapper-head">
-                    <div class="home__fas-wrapper-head-title">fasilitas SMKN 1</div>
+                    <div class="home__fas-wrapper-head-title">fasilitas mts nu </div>
                     <div class="home__fas-wrapper-head-paginate">
                         <div class="button-prev btn-circle">
                             <ion-icon name="arrow-back-outline"></ion-icon>
@@ -78,15 +81,14 @@
                             <div class="swiper-slide">
                                 <div class="berita-box">
                                     <div class="berita-box-img bg-asset"
-                                        style="background: url({{ asset('public/img/juara.jpg') }})"></div>
+                                        style="background: url({{ asset('public/img/fasilitas/aula.jpg') }})"></div>
                                     <div class="berita-box-info">
-
                                         <div class="berita-box-info-cat">
-                                            <div class="berita-box-info-cat-item btn">tecnology</div>
-                                            <div class="berita-box-info-cat-item btn">food</div>
+                                            <div class="berita-box-info-cat-item btn">ruang</div>
+                                            <div class="berita-box-info-cat-item btn">kegiatan</div>
                                         </div>
                                         <div class="berita-box-info-title">
-                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-txt">aula mts nu pakis</div>
                                             <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
                                                 adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
                                                 doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
@@ -107,15 +109,15 @@
                             <div class="swiper-slide">
                                 <div class="berita-box">
                                     <div class="berita-box-img bg-asset"
-                                        style="background: url({{ asset('public/img/juara2.jpg') }})"></div>
+                                        style="background: url({{ asset('public/img/fasilitas/labcom.jpg') }})"></div>
                                     <div class="berita-box-info">
 
                                         <div class="berita-box-info-cat">
                                             <div class="berita-box-info-cat-item btn">tecnology</div>
-                                            <div class="berita-box-info-cat-item btn">food</div>
+                                            <div class="berita-box-info-cat-item btn">ruang</div>
                                         </div>
                                         <div class="berita-box-info-title">
-                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-txt">lab computer</div>
                                             <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
                                                 adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
                                                 doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
@@ -136,7 +138,7 @@
                             <div class="swiper-slide">
                                 <div class="berita-box">
                                     <div class="berita-box-img bg-asset"
-                                        style="background: url({{ asset('public/img/juara3.jpg') }})"></div>
+                                        style="background: url({{ asset('public/img/fasilitas/perpus.jpg') }})"></div>
                                     <div class="berita-box-info">
 
                                         <div class="berita-box-info-cat">
@@ -144,7 +146,7 @@
                                             <div class="berita-box-info-cat-item btn">food</div>
                                         </div>
                                         <div class="berita-box-info-title">
-                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-txt">perpustakaan</div>
                                             <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
                                                 adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
                                                 doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
@@ -165,7 +167,7 @@
                             <div class="swiper-slide">
                                 <div class="berita-box">
                                     <div class="berita-box-img bg-asset"
-                                        style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
+                                        style="background: url({{ asset('public/img/fasilitas/ruangkelas.jpg') }})"></div>
                                     <div class="berita-box-info">
 
                                         <div class="berita-box-info-cat">
@@ -173,7 +175,7 @@
                                             <div class="berita-box-info-cat-item btn">food</div>
                                         </div>
                                         <div class="berita-box-info-title">
-                                            <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                                            <div class="berita-box-info-title-txt">ruang kelas</div>
                                             <div class="berita-box-info-title-desc">Lorem, ipsum dolor sit amet consectetur
                                                 adipisicing elit. Eos distinctio et commodi perferendis officiis quisquam
                                                 doloremque provident ex numquam itaque? Porro dolores soluta et possimus?
@@ -254,10 +256,11 @@
                         <div class="berita-box-btn btn-circle">
                             <ion-icon name="log-in-outline"></ion-icon>
                         </div>
-                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
+                        <div class="berita-box-img"
+                            style="background: url({{ asset('public/img/berita/berita1.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
-                                <div class="berita-box-info-title-cat">articles</div>
+                                <div class="berita-box-info-title-cat">berita</div>
                                 <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
                             </div>
                             <div class="berita-box-info-date">
@@ -275,10 +278,11 @@
                         <div class="berita-box-btn btn-circle">
                             <ion-icon name="log-in-outline"></ion-icon>
                         </div>
-                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
+                        <div class="berita-box-img"
+                            style="background: url({{ asset('public/img/berita/berita2.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
-                                <div class="berita-box-info-title-cat">articles</div>
+                                <div class="berita-box-info-title-cat">berita</div>
                                 <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
                             </div>
                             <div class="berita-box-info-date">
@@ -296,10 +300,11 @@
                         <div class="berita-box-btn btn-circle">
                             <ion-icon name="log-in-outline"></ion-icon>
                         </div>
-                        <div class="berita-box-img" style="background: url({{ asset('public/img/kantin.jpg') }})"></div>
+                        <div class="berita-box-img"
+                            style="background: url({{ asset('public/img/berita/berita3.jpg') }})"></div>
                         <div class="berita-box-info">
                             <div class="berita-box-info-title">
-                                <div class="berita-box-info-title-cat">articles</div>
+                                <div class="berita-box-info-title-cat">berita</div>
                                 <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
                             </div>
                             <div class="berita-box-info-date">
@@ -308,9 +313,47 @@
                                     <p>1, jannuary 2023</p>
                                 </div>
                                 <div class="berita-box-info-date-2">1, jannuary 2023</div>
-
                             </div>
-
+                        </div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-btn btn-circle">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
+                        <div class="berita-box-img"
+                            style="background: url({{ asset('public/img/berita/berita4.jpg') }})"></div>
+                        <div class="berita-box-info">
+                            <div class="berita-box-info-title">
+                                <div class="berita-box-info-title-cat">berita</div>
+                                <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                            </div>
+                            <div class="berita-box-info-date">
+                                <div class="berita-box-info-date-1">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    <p>1, jannuary 2023</p>
+                                </div>
+                                <div class="berita-box-info-date-2">1, jannuary 2023</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{{ route('detailNews') }}" class="berita-box">
+                        <div class="berita-box-btn btn-circle">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
+                        <div class="berita-box-img"
+                            style="background: url({{ asset('public/img/berita/berita5.jpg') }})"></div>
+                        <div class="berita-box-info">
+                            <div class="berita-box-info-title">
+                                <div class="berita-box-info-title-cat">berita</div>
+                                <div class="berita-box-info-title-txt">Illiyin Studio Developer</div>
+                            </div>
+                            <div class="berita-box-info-date">
+                                <div class="berita-box-info-date-1">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    <p>1, jannuary 2023</p>
+                                </div>
+                                <div class="berita-box-info-date-2">1, jannuary 2023</div>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -331,7 +374,7 @@
 @section('js')
     <script type="text/javascript">
         var swiper = new Swiper(".SwiperHome", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             navigation: {
                 nextEl: ".button-next",
@@ -360,22 +403,5 @@
         $('.btn-hide-video-player').on("click", function() {
             $('.video-player').removeClass('show')
         })
-        for (let i = 0; i < 7; i++) {
-            $('.home__berita--wrapper__left--scroll').append(`<div class="berita-box">
-                        <div class="berita-box__left" style="background: url({{ asset('public/img/juara.jpg') }})"></div>
-                        <div class="berita-box__right">
-                            <div class="berita-box__right--title">Kegiatan Pembelajaran Daring</div>
-                            <div class="berita-box__right--desc">Lorem ipsum dolor sit amet adipcing ipsum dolor sit
-                                amet adipcing aqua
-                                lorem ipsum.</div>
-                            <div class="berita-box__right--bottom">
-                                <p>20 Juni</p>
-                                <p>
-                                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                                </p>
-                            </div>
-                        </div>
-                    </div>`)
-        }
     </script>
 @endsection

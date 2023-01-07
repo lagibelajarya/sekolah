@@ -10,7 +10,7 @@
                 <a href="">detail news</a>
             </div>
             <div class="detail-news-hero-info">
-                <div class="detail-news-hero-info-cat ">articles</div>
+                <div class="detail-news-hero-info-cat ">Berita</div>
                 <div class="detail-news-hero-info-title">Ocean Wanderers</div>
                 <div class="detail-news-hero-info-desc">by muhammad rifaldi</div>
                 <div class="detail-news-hero-info-date">
@@ -22,7 +22,8 @@
 
         </div>
         <div class="detail-news-content">
-            <div class="detail-news-content-img bg-asset " style="background: url({{ asset('public/img/kantin.jpg') }})">
+            <div class="detail-news-content-img bg-asset "
+                style="background: url({{ asset('public/img/berita/berita1.jpg') }})">
                 <div class="detail-news-content-img-src"></div>
 
             </div>

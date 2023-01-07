@@ -1,14 +1,14 @@
 @extends('layout.index')
 @section('content')
     <div class="about">
-        <div class="about__hero">
+        <div class="about__hero" style="background: url({{ asset('public/img/heroPakis.jpg') }})">
             <div class="blur"></div>
             <div class="about__hero-info">
                 <div class="about__hero-info-title">
-                    <p>dive into learning</p>
-                    <p>Pelopor SMK bidang Teknologi dan Informatika di Indonesia</p>
+                    <p>tentang </p>
+                    <p>Madrasah Tsanawiyah nahdlatul ulama pakis</p>
                 </div>
-                <div class="about__hero-info-img" style="background: url({{ asset('public/img/home-bg.jpg') }})">
+                <div class="about__hero-info-img" style="background: url({{ asset('public/img/heroPakis.jpg') }})">
                 </div>
             </div>
         </div>
@@ -21,20 +21,22 @@
             </div>
             <div class="about__info-container">
                 <div class="about__info-container-right">
-                    <div class="about__info-container-right-title">What is SMKN 1 Purwosari ?</div>
+                    <div class="about__info-container-right-title">tentang mts nu pakis?</div>
                     <div class="about__info-container-right-txt"> Ocean School is a free environmental education resource
                         for students in grades 5-12. Our inspiring and immersive multimedia resources featuring linear and
                         360˚ videos, VR/AR, interactive media and hands-on projects and activities are offered in English
                         and French. Our cross-curricular content spans science, social studies, language arts and more!
                     </div>
-                    <div class="about__info-container-right-btn btn"> Explore Your Skill</div>
+                    <div class="about__info-container-right-btn btn">Explore Your Skill</div>
                 </div>
                 <div class="about__info-container-left">
                     <div class="about__info-container-left-txt">Explore the ocean through immersive multimedia lessons
                         created by scientists, educators, and storytellers</div>
                     <div class="about__info-container-left-img">
-                        <img src="https://d1fe71kg83l872.cloudfront.net/v2/uploads/_539x382_fit_center-center_none/whale-tablet.png"
-                            alt="">
+                        <div class="about__info-container-left-img-src bg-asset"
+                            style="background: url({{ asset('public/img/siswa.jpg') }})">
+
+                        </div>
                     </div>
 
                 </div>
@@ -42,10 +44,10 @@
         </div>
         <div class="about__map">
             <div class="about__map-title">
-                <div class="about__map-title-1">Location SMKN 1 Purwosari</div>
+                <div class="about__map-title-1">lokasi mts nu pakis</div>
                 <div class="about__map-title-2">
-                    <p>We are very proud to share that Ocean School is nominated as a finalist for a
-                        for the collection “The Harvest” (Bák̓vṇx̌). </p>
+                    <p>Lokasi mts nu pakis berada di Jalan Raya Bunut Wetan Nomor 986, Kecamatan Pakis, Kabupaten Malang
+                    </p>
                 </div>
                 <a href="" class="about__map-title-btn btn">Open In Google Maps</a>
             </div>

@@ -20,7 +20,8 @@
             </div>
             <div class="alumni-info-container">
                 <div class="alumni-info-container-left">
-                    <div class="alumni-info-container-left-img" style="background: url({{ asset('public/img/alumni.png') }})">
+                    <div class="alumni-info-container-left-img"
+                        style="background: url({{ asset('public/img/siswa.jpg') }})">
                     </div>
                 </div>
                 <div class="alumni-info-container-right">
@@ -55,7 +56,8 @@
 
             <div class="alumni-info-container">
                 <div class="alumni-info-container-left">
-                    <div class="alumni-info-container-left-img" style="background: url({{ asset('public/img/alumni.png') }})">
+                    <div class="alumni-info-container-left-img"
+                        style="background: url({{ asset('public/img/siswa.jpg') }});">
                     </div>
                 </div>
                 <div class="alumni-info-container-right">
